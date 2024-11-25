@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 
 // Connect to MongoDB
-const mongoURI = process.env.MONGO_URI || 'mongodb+srv://zvl:zoe@cluster0.auq90.mongodb.net/activism?retryWrites=true&w=majority&appName=Cluster0';
+const mongoURI = process.env.MONGO_URI || 'mongodb+srv://admin:admin@cluster0.auq90.mongodb.net/activism?retryWrites=true&w=majority&appName=Cluster0';
 
 mongoose.connect(mongoURI).catch(error => console.error('MongoDB connection error:', error));
 
