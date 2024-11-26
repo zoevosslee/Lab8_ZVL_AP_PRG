@@ -9,83 +9,138 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
         }
-        #map {
-            width: 100%;
-            height: 400px;
+
+        /* Form Container */
+        .form-container {
+            width: 50%;
+            padding: 20px;
+            overflow-y: auto;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
             margin-bottom: 20px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Map Container */
+        #map {
+            width: 50%;
+            height: 100%;
         }
     </style>
 </head>
 <body>
-    <h1>Submit Historical Location Data</h1>
-    
+    <!-- Form Section -->
+    <div class="form-container">
+        <h1>Submit Historical Location Data</h1>
+        <form action="/submit" method="POST">
+            <!-- Basic Details -->
+            <label for="organization-name">Organization Name:</label>
+            <input type="text" id="organization-name" name="organization_name" required>
+
+            <label for="site-name">Site Name:</label>
+            <input type="text" id="site-name" name="site_name" required>
+
+            <label for="site-address">Site Address:</label>
+            <input type="text" id="site-address" name="site_address" required>
+
+            <label for="year-built">Year Built:</label>
+            <input type="number" id="year-built" name="year_built">
+
+            <label for="historic-uses">Historic Use(s):</label>
+            <textarea id="historic-uses" name="historic_uses" required></textarea>
+
+            <label for="current-uses">Current Use(s):</label>
+            <textarea id="current-uses" name="current_uses" required></textarea>
+
+            <!-- Associated Activists -->
+            <h3>Associated Activist 1</h3>
+            <label for="activist-1-name">Name:</label>
+            <input type="text" id="activist-1-name" name="associated_activist_1">
+
+            <label for="activist-1-paragraph">Paragraph About Significance (Max 500 Characters):</label>
+            <textarea id="activist-1-paragraph" name="activist_1_paragraph" maxlength="500"></textarea>
+
+            <h3>Associated Activist 2</h3>
+            <label for="activist-2-name">Name:</label>
+            <input type="text" id="activist-2-name" name="associated_activist_2">
+
+            <label for="activist-2-paragraph">Paragraph About Significance (Max 500 Characters):</label>
+            <textarea id="activist-2-paragraph" name="activist_2_paragraph" maxlength="500"></textarea>
+
+            <h3>Associated Activist 3</h3>
+            <label for="activist-3-name">Name:</label>
+            <input type="text" id="activist-3-name" name="associated_activist_3">
+
+            <label for="activist-3-paragraph">Paragraph About Significance (Max 500 Characters):</label>
+            <textarea id="activist-3-paragraph" name="activist_3_paragraph" maxlength="500"></textarea>
+
+            <!-- Archival Materials -->
+            <label for="archival-materials">Archival Materials:</label>
+            <textarea id="archival-materials" name="archival_materials"></textarea>
+
+            <label for="archival-description">Description of Uploaded Archival Materials (Max 500 Characters):</label>
+            <textarea id="archival-description" name="archival_description" maxlength="500"></textarea>
+
+            <!-- Longitude and Latitude Fields -->
+            <label for="lon">Longitude:</label>
+            <input type="number" step="any" id="lon" name="lon" required readonly>
+
+            <label for="lat">Latitude:</label>
+            <input type="number" step="any" id="lat" name="lat" required readonly>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
     <!-- Map Section -->
     <div id="map"></div>
 
-    <!-- Form Section -->
-    <form action="/submit" method="POST">
-        <!-- Basic Details -->
-        <label for="organization-name">Organization Name:</label>
-        <input type="text" id="organization-name" name="organization_name" required><br><br>
-
-        <label for="site-name">Site Name:</label>
-        <input type="text" id="site-name" name="site_name" required><br><br>
-
-        <label for="site-address">Site Address:</label>
-        <input type="text" id="site-address" name="site_address" required><br><br>
-
-        <label for="year-built">Year Built:</label>
-        <input type="number" id="year-built" name="year_built"><br><br>
-
-        <label for="historic-uses">Historic Use(s):</label>
-        <textarea id="historic-uses" name="historic_uses" required></textarea><br><br>
-
-        <label for="current-uses">Current Use(s):</label>
-        <textarea id="current-uses" name="current_uses" required></textarea><br><br>
-
-        <!-- Associated Activists -->
-        <h3>Associated Activist 1</h3>
-        <label for="activist-1-name">Name:</label>
-        <input type="text" id="activist-1-name" name="associated_activist_1"><br><br>
-
-        <label for="activist-1-paragraph">Paragraph About Significance (Max 500 Characters):</label>
-        <textarea id="activist-1-paragraph" name="activist_1_paragraph" maxlength="500"></textarea><br><br>
-
-        <h3>Associated Activist 2</h3>
-        <label for="activist-2-name">Name:</label>
-        <input type="text" id="activist-2-name" name="associated_activist_2"><br><br>
-
-        <label for="activist-2-paragraph">Paragraph About Significance (Max 500 Characters):</label>
-        <textarea id="activist-2-paragraph" name="activist_2_paragraph" maxlength="500"></textarea><br><br>
-
-        <h3>Associated Activist 3</h3>
-        <label for="activist-3-name">Name:</label>
-        <input type="text" id="activist-3-name" name="associated_activist_3"><br><br>
-
-        <label for="activist-3-paragraph">Paragraph About Significance (Max 500 Characters):</label>
-        <textarea id="activist-3-paragraph" name="activist_3_paragraph" maxlength="500"></textarea><br><br>
-
-        <!-- Archival Materials -->
-        <label for="archival-materials">Archival Materials:</label>
-        <textarea id="archival-materials" name="archival_materials"></textarea><br><br>
-
-        <label for="archival-description">Description of Uploaded Archival Materials (Max 500 Characters):</label>
-        <textarea id="archival-description" name="archival_description" maxlength="500"></textarea><br><br>
-
-        <!-- Longitude and Latitude Fields -->
-        <label for="lon">Longitude:</label>
-        <input type="number" step="any" id="lon" name="lon" required readonly><br><br>
-
-        <label for="lat">Latitude:</label>
-        <input type="number" step="any" id="lat" name="lat" required readonly><br><br>
-
-        <button type="submit">Submit</button>
-    </form>
-
     <!-- Mapbox JS -->
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
-    <!-- Interactive Map and Data Layer Script -->
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoienZsMTIxNSIsImEiOiJjbTE4OG1lNnQwOG5lMmpxMnRwNGZnb3drIn0.U_npUNUZEOSOXVi5-SWgHw';
 
