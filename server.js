@@ -6,25 +6,44 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Middleware to allow cross-origin requests and parse form data
+// Middleware for cross-origin requests and parsing form data
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// Connect to MongoDB
+// MongoDB Connection
 const mongoURI = process.env.MONGO_URI || 'mongodb+srv://admin:admin@cluster0.auq90.mongodb.net/activism?retryWrites=true&w=majority';
 
 (async () => {
   try {
-    await mongoose.connect(mongoURI); // Removed deprecated options
+    await mongoose.connect(mongoURI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
     console.log('Connected to MongoDB');
   } catch (error) {
     console.error('MongoDB connection error:', error.message);
-    process.exit(1); // Exit the application if the database connection fails
+    process.exit(1);
   }
 })();
 
-// Define schema for the historical location data
+// Schema for retrieving GeoJSON data from `activistdata`
+const geoSchema = new mongoose.Schema(
+  {
+    type: { type: String, default: "Feature" },
+    properties: { type: Object },
+    geometry: {
+      type: { type: String, enum: ["Point", "LineString", "Polygon"], required: true },
+      coordinates: { type: [Number], required: true },
+    },
+  },
+  { collection: "activistdata" } // MongoDB collection name
+);
+
+// Model for GeoJSON retrieval
+const GeoModel = mongoose.model('GeoCollection', geoSchema);
+
+// Schema for form submissions
 const formSchema = new mongoose.Schema({
   organization_name: { type: String, required: true },
   site_name: { type: String, required: true },
@@ -42,8 +61,28 @@ const formSchema = new mongoose.Schema({
   archival_description: { type: String, maxlength: 500 },
 });
 
-// Create Mongoose model
+// Model for form submissions
 const FormData = mongoose.model('HistoricalLocation', formSchema);
+
+// API endpoint to retrieve GeoJSON data
+app.get('/api/geojson', async (req, res) => {
+  try {
+    const features = await GeoModel.find(); // Fetch data from activistdata
+    console.log('Features retrieved from MongoDB:', features); // Debugging
+
+    res.json({
+      type: "FeatureCollection",
+      features: features.map((feature) => ({
+        type: feature.type,
+        properties: feature.properties,
+        geometry: feature.geometry,
+      })),
+    });
+  } catch (error) {
+    console.error('Error fetching GeoJSON data:', error);
+    res.status(500).json({ error: 'Failed to fetch data' });
+  }
+});
 
 // Serve the form HTML
 app.get('/form', (req, res) => {
@@ -79,9 +118,9 @@ app.post('/submit', async (req, res) => {
 
   try {
     await formData.save();
-    res.send('Historical location data saved to MongoDB!');
-  } catch (err) {
-    console.error('Error saving form data:', err);
+    res.send('Data saved successfully!');
+  } catch (error) {
+    console.error('Error saving form data:', error);
     res.status(500).send('Error saving data');
   }
 });
