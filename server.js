@@ -13,13 +13,16 @@ app.use(bodyParser.json());
 
 // Connect to MongoDB
 const mongoURI = process.env.MONGO_URI || 'mongodb+srv://admin:admin@cluster0.auq90.mongodb.net/activism?retryWrites=true&w=majority';
-mongoose.connect(mongoURI).catch(error => console.error('MongoDB connection error:', error));
 
-const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
-db.once('open', () => {
-  console.log('Connected to MongoDB');
-});
+(async () => {
+  try {
+    await mongoose.connect(mongoURI); // Removed deprecated options
+    console.log('Connected to MongoDB');
+  } catch (error) {
+    console.error('MongoDB connection error:', error.message);
+    process.exit(1); // Exit the application if the database connection fails
+  }
+})();
 
 // Define schema for the historical location data
 const formSchema = new mongoose.Schema({
