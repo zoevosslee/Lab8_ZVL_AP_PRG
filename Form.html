@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submit Historical Location Data</title>
+    <!-- Mapbox CSS -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #map {
+            width: 100%;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>Submit Historical Location Data</h1>
+    
+    <!-- Map Section -->
+    <div id="map"></div>
+
+    <!-- Form Section -->
     <form action="/submit" method="POST">
         <!-- Basic Details -->
         <label for="organization-name">Organization Name:</label>
@@ -56,8 +73,74 @@
         <label for="archival-description">Description of Uploaded Archival Materials (Max 500 Characters):</label>
         <textarea id="archival-description" name="archival_description" maxlength="500"></textarea><br><br>
 
-        <!-- Submit Button -->
+        <!-- Longitude and Latitude Fields -->
+        <label for="lon">Longitude:</label>
+        <input type="number" step="any" id="lon" name="lon" required readonly><br><br>
+
+        <label for="lat">Latitude:</label>
+        <input type="number" step="any" id="lat" name="lat" required readonly><br><br>
+
         <button type="submit">Submit</button>
     </form>
+
+    <!-- Mapbox JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    <!-- Interactive Map and Data Layer Script -->
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoienZsMTIxNSIsImEiOiJjbTE4OG1lNnQwOG5lMmpxMnRwNGZnb3drIn0.U_npUNUZEOSOXVi5-SWgHw';
+
+        // Initialize the map
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/zvl1215/cm1dtqpo000qf01qk450z2pv4', // Custom style
+            center: [-73.935242, 40.730610], // Default center (New York City)
+            zoom: 12
+        });
+
+        // Add navigation controls
+        map.addControl(new mapboxgl.NavigationControl());
+
+        // Marker for selected location
+        let marker;
+
+        // Fetch GeoJSON data and add a layer to display it
+        map.on('load', () => {
+            map.addSource('mongoLayer', {
+                type: 'geojson',
+                data: 'https://paths-to-power-zvl-4288f0734099.herokuapp.com/api/geojson'
+            });
+
+            map.addLayer({
+                id: 'mongoLayer',
+                type: 'circle',
+                source: 'mongoLayer',
+                paint: {
+                    'circle-radius': 8,
+                    'circle-color': '#FFD700',
+                    'circle-stroke-color': '#000000',
+                    'circle-stroke-width': 1
+                }
+            });
+        });
+
+        // Click event to get coordinates
+        map.on('click', (e) => {
+            const lon = e.lngLat.lng;
+            const lat = e.lngLat.lat;
+
+            // Update the form fields
+            document.getElementById('lon').value = lon.toFixed(6);
+            document.getElementById('lat').value = lat.toFixed(6);
+
+            // Add or move the marker
+            if (marker) {
+                marker.setLngLat([lon, lat]);
+            } else {
+                marker = new mapboxgl.Marker()
+                    .setLngLat([lon, lat])
+                    .addTo(map);
+            }
+        });
+    </script>
 </body>
 </html>
