@@ -26,23 +26,69 @@ const map = new mapboxgl.Map({
   zoom: 12, // Initial zoom level
 });
 
-map.on('load', () => {
-  // Add a GeoJSON source with data from the API
-  map.addSource('mongoLayer', {
-    type: 'geojson',
-    data: 'https://paths-to-power-zvl-4288f0734099.herokuapp.com/api/geojson' // Replace with your API endpoint
-  });
+// Add navigation controls
+const nav = new mapboxgl.NavigationControl();
+map.addControl(nav, 'top-right');
 
-  // Add a layer to display MongoDB data with circle outline
-  map.addLayer({
-    id: 'mongoLayer',
-    type: 'circle',
-    source: 'mongoLayer',
-    paint: {
-      'circle-radius': 10,
-      'circle-color': '#ffd500', // Fill color
-      'circle-stroke-color': '#000000', // Outline color
-      'circle-stroke-width': 0.5 // Outline width
-    }
-  });
+// Load GeoJSON data and add to the map
+map.on('load', () => {
+  const geojsonEndpoint = 'https://paths-to-power-zvl-4288f0734099.herokuapp.com/api/geojson';
+
+  fetch(geojsonEndpoint)
+    .then(response => response.json())
+    .then(data => {
+      if (data && data.features && data.features.length > 0) {
+        console.log('GeoJSON data loaded successfully:', data);
+
+        // Add GeoJSON source
+        map.addSource('mongoLayer', {
+          type: 'geojson',
+          data: data,
+        });
+
+        // Add a layer to display MongoDB data with circle outline
+        map.addLayer({
+          id: 'mongoLayer',
+          type: 'circle',
+          source: 'mongoLayer',
+          paint: {
+            'circle-radius': 10,
+            'circle-color': '#ffd500', // Fill color
+            'circle-stroke-color': '#000000', // Outline color
+            'circle-stroke-width': 0.5, // Outline width
+          },
+        });
+
+        // Add popup interaction
+        const popup = new mapboxgl.Popup({
+          closeButton: false,
+          closeOnClick: false,
+        });
+
+        map.on('mouseenter', 'mongoLayer', (e) => {
+          map.getCanvas().style.cursor = 'pointer';
+
+          const coordinates = e.features[0].geometry.coordinates.slice();
+          const properties = e.features[0].properties;
+
+          // Set the popup content to display the site name
+          popup.setLngLat(coordinates)
+            .setHTML(`
+              <h3>Site: ${properties.Site || 'Unknown Site'}</h3>
+              <p>${properties.Description || 'No additional information available.'}</p>
+            `)
+            .addTo(map);
+        });
+
+        map.on('mouseleave', 'mongoLayer', () => {
+          map.getCanvas().style.cursor = '';
+          popup.remove();
+        });
+      } else {
+        console.error('No features found in the GeoJSON data.');
+      }
+    })
+    .catch(err => {
+      console.error('Error fetching GeoJSON data:', err);
+    });
 });
