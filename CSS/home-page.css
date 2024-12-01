@@ -1,6 +1,5 @@
 /* Base Styles */
 body {
-  <<<<<<< HEAD
       margin: 0;
       padding: 0;
       background-color: #000;
@@ -127,13 +126,7 @@ body {
       width: 15%;
       height: auto;
     }
-  =======
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-    font-family: var(--font-family-roboto), sans-serif; /* Use Roboto globally as the default */
-  }
-  
+
   .home-page {
     display: flex;
     flex-direction: column;
@@ -147,15 +140,24 @@ body {
     overflow: hidden;
   }
   
-  /* Left Column */
-  .left-column {
-    width: 40%;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #000;
-  }
+ /* Left Column */
+.left-column {
+  width: 40%;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #000;
+  overflow: scroll;
+
+  /* Hide Scrollbars */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer */
+}
+
+.left-column::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
   
   .title {
     font-family: var(--font-family-montserrat), sans-serif;
