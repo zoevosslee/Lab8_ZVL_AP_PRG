@@ -1,0 +1,187 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--black);
+  font-family: var(--font-family-roboto);
+  color: var(--white);
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Sticky Top Panel */
+.top-panel-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--black);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xxl);
+  font-weight: 900;
+  color: var(--amber);
+  margin: 0;
+}
+
+.top-panel .button {
+  font-family: var(--font-family-roboto);
+  background-color: var(--amber);
+  color: var(--black);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.top-panel .button:hover {
+  background-color: var(--status-color--warning);
+}
+
+/* About Section */
+.about-1,
+.partners-section,
+.contact {
+  max-width: 90%;
+  margin: 50px auto;
+  padding: 20px;
+  display: block;
+}
+
+.about-paths-to-power,
+.partners-and-current,
+.place {
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xl);
+  font-weight: 900;
+  color: var(--amber);
+  margin-bottom: 20px;
+  text-align: left; /* Ensure consistent left alignment */
+}
+
+.paths-to-power-is-a,
+.we-are-always-lookin {
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-s);
+  line-height: 1.8;
+  text-align: justify;
+  margin: 20px 0;
+}
+
+.about-1 ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.about-1 ul li {
+  margin-bottom: 10px;
+}
+
+/* Partners Section */
+.image-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.image-container img {
+  height: 150px;
+  object-fit: contain; /* Preserve aspect ratio without squishing */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer Buttons */
+.button-container {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  gap: 20px;
+  padding: 20px;
+}
+
+.learn-more {
+  font-family: var(--font-family-roboto);
+  background-color: var(--amber);
+  color: var(--black);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: var(--font-size-xs); /* Match top button size */
+}
+
+.learn-more:hover {
+  background-color: var(--status-color--warning);
+}
+
+/* Hide Scrollbars */
+body::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Webkit browsers */
+}
+
+body {
+  -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-1,
+  .partners-section,
+  .contact {
+    max-width: 95%;
+    padding: 10px;
+  }
+
+  .image-container img {
+    max-width: calc(50% - 20px);
+  }
+
+  .paths-to-power-is-a {
+    font-size: var(--font-size-xs);
+  }
+
+  .about-paths-to-power,
+  .partners-and-current,
+  .place {
+    font-size: var(--font-size-l);
+  }
+
+  .learn-more {
+    font-size: var(--font-size-xs);
+  }
+}
+
+/* Ensure proper styling for unordered lists in the About section */
+.about-1 ul {
+  font-family: var(--font-family-roboto); /* Apply Roboto font */
+  font-size: var(--font-size-s); /* Match the paragraph font size */
+  line-height: 1.8; /* Ensure consistent spacing */
+  color: var(--white); /* Ensure text color matches the rest */
+  padding-left: 20px; /* Add indentation for bullets */
+  margin-top: 20px; /* Add spacing above the list */
+}
+
+.about-1 ul li {
+  font-family: var(--font-family-roboto); /* Explicitly apply Roboto font */
+  font-size: var(--font-size-s); /* Match the paragraph font size */
+  line-height: 1.8; /* Maintain line spacing consistency */
+  margin-bottom: 10px; /* Add spacing between list items */
+  text-align: justify; /* Align text to match the paragraph style */
+}
+
+.about-1 ul li strong {
+  font-weight: 700; /* Ensure bold text for emphasis */
+}
