@@ -1,0 +1,187 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "coordinates": [
+                    -73.92641717304576,
+                    40.67437665565822
+                ],
+                "type": "Point"
+            },
+            "id": 0
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Location": "Concord Baptist Church",
+                "marker-color": "#fac301",
+                "marker-size": "medium",
+                "marker-symbol": "circle",
+                "Site Address": "Gardner C. Taylor Boulevard",
+                "Historic Use": "Church",
+                "Current Use": "Church",
+                "Activist 1 associated ": "Shirley Chisholm, 1924-2005",
+                "Activist 2 associated ": "Alice W. Wiley Seay, 1958 - 1937",
+                "Contributor": "Conrad Baptist Church",
+                "Built in": 1906
+            },
+            "geometry": {
+                "coordinates": [
+                    -73.94977540821205,
+                    40.67853952150554
+                ],
+                "type": "Point"
+            },
+            "id": 1
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Location": "Brooklyn Girls High School",
+                "Site Address": "457 Nostrand Ave., Brooklyn",
+                "marker-color": "#ffc800",
+                "marker-size": "medium",
+                "marker-symbol": "circle",
+                "Historic Use": "Public School",
+                "Current Use": "Brooklyn Adult Learning Center",
+                "Activist 1 Associated": "Shirley Chisholm, 1924-2005",
+                "Activist 2 Associated": "Lena Horne, 1917-2010",
+                "Contributor": "Center for Brooklyn History",
+                "Built in": 1886
+            },
+            "geometry": {
+                "coordinates": [
+                    -73.9491299999991,
+                    40.681549053687775
+                ],
+                "type": "Point"
+            },
+            "id": 2
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Location": "1467 Bedford Avenue",
+                "marker-color": "#fac300",
+                "marker-size": "medium",
+                "marker-symbol": "circle",
+                "Historic Use": "Event space",
+                "Current Use": "Event space/co-working space",
+                "Activist 1 associated": "Shirley Chisholm, 1924-2005",
+                "Contributor": "Center for Brooklyn History",
+                "Built in": 1906
+            },
+            "geometry": {
+                "coordinates": [
+                    -73.95396245767078,
+                    40.67310833300701
+                ],
+                "type": "Point"
+            },
+            "id": 3
+        },
+        {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "coordinates": [
+                    [
+                        [
+                            -73.94988434026222,
+                            40.679104771997686
+                        ],
+                        [
+                            -73.94980965199487,
+                            40.679104771997686
+                        ],
+                        [
+                            -73.94980965199487,
+                            40.679246375592925
+                        ],
+                        [
+                            -73.94988434026222,
+                            40.679246375592925
+                        ],
+                        [
+                            -73.94988434026222,
+                            40.679104771997686
+                        ]
+                    ]
+                ],
+                "type": "Polygon"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Location": "Brooklyn College",
+                "marker-color": "#fac300",
+                "marker-size": "medium",
+                "marker-symbol": "circle",
+                "Historic Use": "College",
+                "Current Use": "College",
+                "Activist 1 Associated": "Shirley Chisholm, 1924-2005",
+                "Activist 2 Associated ": "Lucille Mason Rose, 1920 - 1987",
+                "Contributor": "Brooklyn College",
+                "Built in": "1937 (current site constructed); 1930 (first campus site in downtown Brooklyn)"
+            },
+            "geometry": {
+                "coordinates": [
+                    -73.95182781349175,
+                    40.63154794071281
+                ],
+                "type": "Point"
+            },
+            "id": 5
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Location": "Bellrose Ballroom",
+                "marker-color": "#fac300",
+                "marker-size": "medium",
+                "marker-symbol": "circle",
+                "Historic Use": "automobile showroom; motor vehicle department; Banner Dairy; Bellrose Ballroom",
+                "Current Use": "Owned by Washington Temple, but bricked up.",
+                "Activist 1 associated": "Shirley Chisholm",
+                "Contributor": "Shirley Chisholm Project (Brooklyn College)",
+                "Built in": 1918
+            },
+            "geometry": {
+                "coordinates": [
+                    -73.95305000000039,
+                    40.67560392029068
+                ],
+                "type": "Point"
+            },
+            "id": 6
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Location": "Public School 22",
+                "marker-color": "#fac300",
+                "marker-size": "medium",
+                "marker-symbol": "circle",
+                "Historic Use": "Public School",
+                "Current Use": "Closed",
+                "Activist 1 Associated": "Mae Mallory",
+                "Activist 2 Associated": "Elsie Richardson",
+                "Built in": 1886,
+                "Activist 3 Associated": "Shirley Chisholm",
+                "Contributor": "Zinn Educational Project"
+            },
+            "geometry": {
+                "coordinates": [
+                    -73.95981400000021,
+                    40.676963603246634
+                ],
+                "type": "Point"
+            },
+            "id": 7
+        }
+    ]
+}
