@@ -1,60 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paths to Power Events</title>
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
-    <link rel="stylesheet" type="text/css" href="css/global.css" />
-    <link rel="stylesheet" type="text/css" href="css/events.css" />
-  </head>
-  <body>
-    <!-- Sticky Header -->
-    <div class="top-panel-container">
-      <h1 class="title">Paths to Power</h1>
-      <div class="top-panel">
-        <button class="button">About</button>
-        <button class="button">Explore by City</button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/styleguide.css">
+  <link rel="stylesheet" type="text/css" href="css/global.css">
+  <link rel="stylesheet" type="text/css" href="css/events.css">
+  <title>Paths to Power Events</title>
+</head>
+<body>
+<!-- Title Container -->
+<div class="title-container">
+  <h1 class="title">Paths to Power</h1>
+  <img class="vector" src="img/vector.svg" alt="Footsteps Vector">
+  <div class="nav-buttons">
+    <button class="button">About</button>
+    <button class="button">Explore by City</button>
+    <button class="button">Contact</button>
+  </div>
+</div>
+
+<!-- Events Page Layout -->
+<div class="events-page">
+  <!-- Left Column -->
+  <div class="left-column">
+    <h2 class="section-title">Upcoming Events</h2>
+    <p class="description">
+      Join a walking tour led by a Paths to Power grantee, who will guide you in the footsteps of a highlighted activist and share their own experience of adding people, places, and memories to the map.<br><br>
+      All tours are conducted on a donations basis, with all funds supporting historic sites in Brooklyn and our local community partners.
+    </p>
+    <button class="returnhome">Return to Home</button>
+  </div>
+
+  <!-- Right Column -->
+  <div class="right-column">
+    <div class="events-individual">
+      <!-- Event Card 1 -->
+      <div class="event-card">
+        <img src="img/image-42.png" alt="Shirley Chisholm Tour">
+        <p class="event-date">December 4th, 2024</p>
+        <h3 class="event-title">Shirley Chisholm’s 100th Birthday Paths to Power Tour</h3>
+        <p class="event-description">
+          In special partnership with the Museum of the City of New York, as part of their programming to commemorate Shirley Chisholm for her birthday, tours will be led by a historian and a steward of Chisholm's legacy. Join us for an afternoon of walking, remembering, and celebrating!
+        </p>
+        <button class="register-button">Register</button>
+      </div>
+      <!-- Event Card 2 -->
+      <div class="event-card">
+        <img src="img/image-42-1.png" alt="Black Women Activists">
+        <p class="event-date">December 15th, 2024</p>
+        <h3 class="event-title">Black Women Activists of Brooklyn Paths to Power Tour</h3>
+        <p class="event-description">
+          Celebrate the lives and learn about the overlapping Paths to Power of Black women in Brooklyn, from celebrated icons you already know, to unsung heroes whose stories were documented through the Paths to Power project.
+        </p>
+        <button class="register-button">Register</button>
+      </div>
+      <!-- Event Card 3 -->
+      <div class="event-card">
+        <img src="img/image-43.png" alt="Mae Mallory Tour">
+        <p class="event-date">January 5th, 2025</p>
+        <h3 class="event-title">Walking through Mae Mallory’s Legacy</h3>
+        <p class="event-description">
+          This guided tour will focus on the extraordinary legacy of Mae Mallory. Beginning at P.S. 10 in Harlem, where Mallory’s children attended school, the walk will explore key sites of the &#34;Harlem 9&#34; school boycotts and locations where Mallory and fellow activists planned their groundbreaking campaigns against school segregation in New York City.
+        </p>
+        <button class="register-button">Register</button>
+      </div>
+      <!-- Event Card 4 -->
+      <div class="event-card">
+        <img src="img/image-59.png" alt="Everyday Resistance">
+        <p class="event-date">February 19th, 2025</p>
+        <h3 class="event-title">Narratives of Everyday Resistance</h3>
+        <p class="event-description">
+          Join us for the Living Histories Tour, where community voices bring the stories of unsung women activists to life. Hear personal accounts, oral history clips, and reflections from guest speakers whose families were connected to the Civil Rights Movement. Celebrate the everyday resistance that shaped our neighborhoods and continues to inspire change.
+        </p>
+        <button class="register-button">Register</button>
       </div>
     </div>
-
-    <!-- Event Section -->
-    <div class="events">
-      <h2 class="walking-tours">Upcoming Events</h2>
-      <p class="join-a-walking-tour">
-        Join a walking tour led by a Paths to Power grantee, who will guide you in the footsteps of a highlighted
-        activist and share their own experience of adding people, places, and memories to the map.
-      </p>
-      <div class="events-individual">
-        <!-- Event Card 1 -->
-        <div class="event-card">
-          <img src="img/image-42.png" alt="Shirley Chisholm Tour" />
-          <p class="event-date">15th December 2024</p>
-          <h3 class="event-title">Shirley Chisholm’s 100th Birthday Paths to Power Tour</h3>
-          <p class="event-description">
-            In partnership with the Museum of the City of New York, tours will be led by a student and a historian.
-          </p>
-          <button class="register-button">Register</button>
-        </div>
-
-        <!-- Event Card 2 -->
-        <div class="event-card">
-          <img src="img/image-43.png" alt="Mae Mallory Tour" />
-          <p class="event-date">5th January 2025</p>
-          <h3 class="event-title">Black Feminists of Brooklyn Paths to Power Tour</h3>
-          <p class="event-description">
-            Celebrate the lives of Black women in Brooklyn, from celebrated icons to unsung heroes documented through
-            this project.
-          </p>
-          <button class="register-button">Register</button>
-        </div>
-      </div>
-    </div>
-  </body>
+  </div>
+</div>
+</body>
 </html>

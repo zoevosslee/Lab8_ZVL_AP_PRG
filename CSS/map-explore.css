@@ -1,0 +1,171 @@
+/* General Body Styling */
+html,
+body {
+  height: 100%; /* Ensure body and html fill the viewport */
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Black background for contrast */
+  font-family: 'Roboto', sans-serif; /* Default font */
+  color: #fff; /* White text color */
+  overflow: hidden; /* Prevent unintended scrolling */
+}
+
+/* Title Container */
+.title-container {
+  position: relative; /* Ensures vector and buttons are positioned relative to this container */
+  margin: 50px 30px;
+}
+
+.title {
+  font-family: var(--font-family-montserrat), sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+  color: var(--amber);
+  margin-bottom: 0px;
+  position: relative;
+  z-index: 1; /* Ensure title is above other elements */
+}
+
+/* Footsteps Vector */
+.vector {
+  position: absolute;
+  top: -40px;
+  left: 450px;
+  width: 150px;
+  height: auto;
+  z-index: 0; /* Place behind the title */
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+/* Buttons in Top Right */
+.title-container .nav-buttons {
+  position: absolute; /* Position relative to the title-container */
+  top: 0; /* Align to the top */
+  right: 0; /* Align to the right */
+  display: flex;
+  gap: 15px;
+}
+
+.title-container .button {
+  font-family: var(--font-family-roboto);
+  background-color: var(--amber);
+  color: var(--black);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: none;
+}
+
+.title-container .button:hover {
+  transform: scale(1.01); /* Slight enlargement on hover */
+  transition: transform 0.2s ease; /* Smooth transition effect */
+}
+
+
+/* Main Layout */
+.main-layout {
+  display: flex;
+  height: 100%; /* Ensure the main layout spans the full height */
+  flex: 1;
+}
+
+/* Left Scrollable Menu */
+.scroll-menu {
+  flex: 2; /* Doubled width (previously 1, now 2) */
+  max-width: 800px; /* Double the fixed width for the menu */
+  background-color: #000;
+  overflow-y: auto; /* Vertical scrolling enabled */
+  padding: 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+}
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between scroll items */
+}
+
+.link {
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05); /* Transparent background */
+}
+
+.larger-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--amber);
+  margin: 10px 0;
+}
+
+.body2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  color: #fff; /* White text color */
+  line-height: 1.6;
+}
+
+/* Right Map Section */
+.map-container {
+  flex: 3; /* Let the map take up the remaining space */
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure it fills its parent */
+  position: relative; /* Required for absolute positioning of buttons */
+}
+
+.right-buttons {
+  position: absolute; /* Position relative to .map-container */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right edge */
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  z-index: 10; /* Ensure buttons are above the map */
+}
+
+.right-buttons .button {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--amber);
+  color: #000; /* Black text */
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add some shadow */
+}
+
+.right-buttons .button:hover {
+  transform: scale(1.01); /* Slight enlargement on hover */
+  transition: transform 0.2s ease; /* Smooth transition effect */
+}  
+
+#map {
+  flex-grow: 1; /* Allow map to expand within its container */
+  width: 100%;
+  height: 100%; /* Ensure it fills the .map-container */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-layout {
+    flex-direction: column;
+  }
+
+  .scroll-menu {
+    max-width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    height: auto;
+    overflow-y: auto;
+  }
+
+  
