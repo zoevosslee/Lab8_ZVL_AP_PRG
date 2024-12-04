@@ -7,6 +7,8 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.use(express.static(path.join(__dirname,'')));
+
 // Middleware for cross-origin requests and parsing form data
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -83,22 +85,13 @@ app.get('/api/geojson', async (req, res) => {
   }
 });
 
-// Serve HTML files
-app.get('/home-page', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'home-page.html'));
-});
-
-app.get('/about', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'about.html'));
-});
-
-app.get('/map-explore', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'map-explore.html'));
-});
-
 // Serve the form HTML
 app.get('/form', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'Form.html'));
+});
+
+app.get('/home', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'index.html'));
 });
 
 // Handle form submissions

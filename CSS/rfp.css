@@ -62,6 +62,8 @@ body::-webkit-scrollbar {
   border-radius: 5px;
   cursor: pointer;
   transition: transform 0.2s ease, background-color 0.2s ease; /* Smooth transitions */
+  text-decoration: none;
+  z-index: 1000;
 }
 
 .nav-buttons .button:hover {

@@ -44,29 +44,37 @@ body::-webkit-scrollbar {
 
 /* Buttons in Top Right */
 .title-container .nav-buttons {
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: absolute; /* Ensure correct placement relative to title-container */
+  top: 0; /* Align to the top */
+  right: 0; /* Align to the right */
   display: flex;
   gap: 15px;
+  z-index: 1000; /* Ensure it is above other elements */
 }
 
-.nav-buttons .button {
-  font-family: var(--font-family-roboto);
+.title-container .button {
+  font-family: 'Roboto', sans-serif;
   background-color: var(--amber);
-  color: var(--black);
-  font-size: var(--font-size-m);
+  color: #000;
+  font-size: var(--font-size-m); /* Adjust to smaller size if needed */
   font-weight: 600;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 20px; /* Adjust padding for better fit */
   border-radius: 5px;
   cursor: pointer;
-  transition: transform 0.2s ease, background-color 0.2s ease; /* Smooth transitions */
+  text-decoration: none; /* Remove underline */
 }
 
-.nav-buttons .button:hover {
-  transform: scale(1.01); /* Enlarges slightly on hover */
+.title-container .button span {
+  pointer-events: none; /* Ensure the entire button is clickable */
 }
+
+.title-container .button:hover {
+  transform: scale(1.02); /* Slight hover effect */
+  transition: transform 0.2s ease; /* Smooth transition */
+
+}
+
 /* Header Image Styling */
 .rectangle-161 {
   width: 100%; /* Ensures the image spans the full width of the container */
@@ -101,7 +109,7 @@ body::-webkit-scrollbar {
 .paths-to-power-is-a,
 .we-are-always-lookin {
   font-family: var(--font-family-roboto);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-m);
   line-height: 1.8;
   text-align: justify;
   margin: 20px 0;
@@ -115,7 +123,7 @@ body::-webkit-scrollbar {
 .about-1 ul li {
   margin-bottom: 10px;
   font-family: var(--font-family-roboto);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-m);
   line-height: 1.8;
   text-align: justify;
 }
@@ -155,6 +163,8 @@ body::-webkit-scrollbar {
   font-weight: 600;
   text-transform: none;
   font-size: var(--font-size-m);
+  text-transform: none; /* Prevent all-caps transformation */
+  text-decoration: none;
 }
 
 .learn-more:hover {

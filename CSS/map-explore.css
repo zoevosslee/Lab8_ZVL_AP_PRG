@@ -58,6 +58,8 @@ body {
   border-radius: 5px;
   cursor: pointer;
   text-transform: none;
+  text-decoration: none;
+  z-index: 1000;
 }
 
 .title-container .button:hover {

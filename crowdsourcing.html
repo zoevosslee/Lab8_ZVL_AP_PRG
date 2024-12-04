@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <title>Paths to Power</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styleguide.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/crowdsourcing.css" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+  </head>
+  <body>
+    <!-- Title Container -->
+    <div class="title-container">
+      <h1 class="title">Paths to Power</h1>
+      <img class="vector" src="img/vector.svg" alt="Footsteps Vector">
+      <div class="nav-buttons">
+        <a href="home-page.html" class="button"><span>Home</span></a>
+        <a href="map-explore.html" class="button"><span>Explore the Map</span></a>
+        <a href="events.html" class="button"><span>Upcoming Events</span></a>
+      </div>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="main-layout">
+      <!-- Left Scrollable Section -->
+      <div class="scroll-menu">
+        <div class="scroll">
+          <!-- Inserted Form Section -->
+          <div class="form-container">
+            <h1>Submit Historical Location Data</h1>
+            <form action="/submit" method="POST">
+              <!-- Basic Details -->
+              <label for="organization-name">Organization Name:</label>
+              <input type="text" id="organization-name" name="organization_name" required />
+
+              <label for="site-name">Site Name:</label>
+              <input type="text" id="site-name" name="site_name" required />
+
+              <label for="site-address">Site Address:</label>
+              <input type="text" id="site-address" name="site_address" required />
+
+              <label for="year-built">Year Built:</label>
+              <input type="number" id="year-built" name="year_built" />
+
+              <label for="historic-uses">Historic Use(s):</label>
+              <textarea id="historic-uses" name="historic_uses" required></textarea>
+
+              <label for="current-uses">Current Use(s):</label>
+              <textarea id="current-uses" name="current_uses" required></textarea>
+
+              <!-- Associated Activists -->
+              <h3>Associated Activist 1</h3>
+              <label for="activist-1-name">Name:</label>
+              <input type="text" id="activist-1-name" name="associated_activist_1" />
+
+              <label for="activist-1-paragraph">Paragraph About Significance (Max 500 Characters):</label>
+              <textarea id="activist-1-paragraph" name="activist_1_paragraph" maxlength="500"></textarea>
+
+              <h3>Associated Activist 2</h3>
+              <label for="activist-2-name">Name:</label>
+              <input type="text" id="activist-2-name" name="associated_activist_2" />
+
+              <label for="activist-2-paragraph">Paragraph About Significance (Max 500 Characters):</label>
+              <textarea id="activist-2-paragraph" name="activist_2_paragraph" maxlength="500"></textarea>
+
+              <h3>Associated Activist 3</h3>
+              <label for="activist-3-name">Name:</label>
+              <input type="text" id="activist-3-name" name="associated_activist_3" />
+
+              <label for="activist-3-paragraph">Paragraph About Significance (Max 500 Characters):</label>
+              <textarea id="activist-3-paragraph" name="activist_3_paragraph" maxlength="500"></textarea>
+
+              <!-- Archival Materials -->
+              <label for="archival-materials">Archival Materials:</label>
+              <textarea id="archival-materials" name="archival_materials"></textarea>
+
+              <label for="archival-description">Description of Uploaded Archival Materials (Max 500 Characters):</label>
+              <textarea id="archival-description" name="archival_description" maxlength="500"></textarea>
+
+              <!-- Longitude and Latitude Fields -->
+              <label for="lon">Longitude:</label>
+              <input type="number" step="any" id="lon" name="lon" required readonly />
+
+              <label for="lat">Latitude:</label>
+              <input type="number" step="any" id="lat" name="lat" required readonly />
+
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Map Section -->
+      <div class="map-container">
+        <div id="map">
+          <!-- Map initialized via map.js -->
+        </div>
+        <!-- Move buttons here to ensure they're independent -->
+        <div class="right-buttons">
+          <button class="button">Add to Map</button>
+          <button class="button">Return Home</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="map.js"></script>
+    
+  </body>
+</html>
