@@ -98,8 +98,13 @@ body {
     }
     
     .button-container img {
+<<<<<<< HEAD
       width: 24px;
       height: 24px;
+=======
+      width: 36px;
+      height: 36px;
+>>>>>>> origin/new-branch
     }
     
     .button-container:hover {
@@ -195,8 +200,14 @@ body {
     background-color: #ffd500;
     color: #000;
     font-weight: 600;
+<<<<<<< HEAD
     border: none;
     padding: 10px 20px;
+=======
+    font-size: 18px; /* Updated font size */
+    border: none;
+    padding: 12px 25px; /* Adjust padding if needed */
+>>>>>>> origin/new-branch
     border-radius: 5px;
     cursor: pointer;
     text-transform: uppercase;
@@ -206,6 +217,7 @@ body {
     background-color: #e5c400;
   }
   
+<<<<<<< HEAD
   /* Button Group */
   .button-group {
     display: flex;
@@ -213,6 +225,8 @@ body {
     gap: 25px;
   }
   
+=======
+>>>>>>> origin/new-branch
   .button-container {
     font-family: var(--font-family-roboto), sans-serif;
     display: flex;
@@ -223,6 +237,10 @@ body {
     border-radius: 10px;
     color: #ffd500;
     font-weight: 900;
+<<<<<<< HEAD
+=======
+    font-size: 20px; /* Updated font size */
+>>>>>>> origin/new-branch
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.2s ease;
   }
