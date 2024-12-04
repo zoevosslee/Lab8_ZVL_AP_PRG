@@ -101,7 +101,7 @@ body::-webkit-scrollbar {
 .paths-to-power-is-a,
 .we-are-always-lookin {
   font-family: var(--font-family-roboto);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-m);
   line-height: 1.8;
   text-align: justify;
   margin: 20px 0;
@@ -115,7 +115,7 @@ body::-webkit-scrollbar {
 .about-1 ul li {
   margin-bottom: 10px;
   font-family: var(--font-family-roboto);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-m);
   line-height: 1.8;
   text-align: justify;
 }

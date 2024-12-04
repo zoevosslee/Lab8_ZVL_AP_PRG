@@ -1,0 +1,348 @@
+/* General Body Styling */
+html,
+body {
+  height: 100%; /* Ensure body and html fill the viewport */
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Black background for contrast */
+  font-family: 'Roboto', sans-serif; /* Default font */
+  color: #fff; /* White text color */
+  overflow: hidden; /* Prevent unintended scrolling */
+}
+
+/* Title Container */
+.title-container {
+  position: relative; /* Ensures vector and buttons are positioned relative to this container */
+  margin: 50px 30px;
+}
+
+.title {
+  font-family: var(--font-family-montserrat), sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+  color: var(--amber);
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1; /* Ensure title is above other elements */
+}
+
+/* Footsteps Vector */
+.vector {
+  position: absolute;
+  top: -40px;
+  left: 450px;
+  width: 150px;
+  height: auto;
+  z-index: 0; /* Place behind the title */
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+/* Buttons in Top Right */
+.title-container .nav-buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.title-container .button {
+  font-family: var(--font-family-roboto);
+  background-color: var(--amber);
+  color: var(--black);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.title-container .button:hover {
+  transform: scale(1.01); /* Slight enlargement on hover */
+  transition: transform 0.2s ease; /* Smooth transition effect */
+}
+
+/* Main Layout */
+.main-layout {
+  display: flex;
+  height: 100%; /* Ensure the main layout spans the full height */
+  flex: 1;
+}
+
+/* Left Scrollable Menu */
+.scroll-menu {
+  flex: 2;
+  max-width: 800px;
+  background-color: #000;
+  overflow-y: auto; /* Enable vertical scrolling */
+  height: 100%; /* Ensure it fills the available vertical space */
+  padding: 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 100%; /* Ensure the container spans at least the height of its parent */
+  padding-bottom: 50px; /* Add extra space to ensure the submit button isn't clipped */
+}
+
+.form-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+button[type="submit"] {
+  margin-top: 15px;
+  background-color: var(--amber, #FFC107);
+  color: #000;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #e0b800;
+}
+
+/* Right Map Section */
+.map-container {
+  flex: 3; /* Let the map take up the remaining space */
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure it fills its parent */
+  position: relative; /* Required for absolute positioning of buttons */
+}
+
+.right-buttons {
+  position: absolute; /* Position relative to .map-container */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right edge */
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  z-index: 10; /* Ensure buttons are above the map */
+}
+
+.right-buttons .button {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--amber);
+  color: #000; /* Black text */
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add some shadow */
+}
+
+.right-buttons .button:hover {
+  transform: scale(1.01); /* Slight enlargement on hover */
+  transition: transform 0.2s ease; /* Smooth transition effect */
+}  
+
+#map {
+  flex-grow: 1; /* Allow map to expand within its container */
+  width: 100%;
+  height: 100%; /* Ensure it fills the .map-container */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-layout {
+    flex-direction: column;
+  }
+
+  .scroll-menu {
+    max-width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    height: auto;
+    overflow-y: auto;
+  }
+}
+
+/* Scrollable Menu */
+.scroll-menu {
+  flex: 2;
+  max-width: 800px;
+  background-color: #000;
+  overflow-y: auto; /* Allow vertical scrolling */
+  height: 100%; /* Make sure it fills the vertical space */
+  padding: 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Form Container */
+.form-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05); /* Subtle contrast */
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  gap: 15px; /* Add space between elements */
+}
+
+/* Form Labels and Inputs */
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+input, textarea, button {
+  width: 100%; /* Full width */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+/* Textareas */
+textarea {
+  resize: vertical; /* Allow vertical resizing */
+  height: 100px; /* Set a reasonable height */
+}
+
+/* Submit Button */
+button[type="submit"] {
+  margin-top: 20px; /* Add space above */
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: var(--amber, #FFC107);
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #e0b800;
+}
+
+/* Ensure Scroll Completes */
+.scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 50px; /* Extra space for scrolling */
+  min-height: 100%; /* Ensure the container spans at least the height of its parent */
+}
+
+/* Scrollable Menu */
+.scroll-menu {
+  flex: 2;
+  max-width: 800px;
+  background-color: #000;
+  overflow-y: auto; /* Enable vertical scrolling */
+  height: calc(100vh - 50px); /* Ensure scrolling fits within the viewport */
+  padding: 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Form Container */
+.form-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05); /* Subtle contrast */
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  gap: 15px; /* Add space between elements */
+}
+
+/* Form Labels and Inputs */
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+input, textarea, button {
+  width: 100%; /* Full width */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+/* Textareas */
+textarea {
+  resize: vertical; /* Allow vertical resizing */
+  height: 100px; /* Set a reasonable height */
+}
+
+/* Submit Button */
+button[type="submit"] {
+  margin-top: 20px; /* Add space above */
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: var(--amber, #FFC107);
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #e0b800;
+}
+
+/* Ensure Scroll Completes */
+.scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 100px; /* Extra space for scrolling */
+  min-height: 100%; /* Ensure the container spans at least the height of its parent */
+}
+
+/* Nav Buttons */
+.nav-buttons {
+  position: absolute;
+  top: 20px; /* Slightly lower */
+  right: 30px; /* Adjust for right alignment */
+  display: flex;
+  gap: 15px;
+}
+
+.nav-buttons .button {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--amber, #FFC107); /* Bright yellow background */
+  color: #000; /* Black text */
+  font-size: 18px; /* Larger font size */
+  font-weight: 600;
+  border: none;
+  padding: 15px 25px; /* Larger padding for a bigger button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add button shadow */
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.nav-buttons .button:hover {
+  transform: scale(1.02); /* Slightly larger on hover */
+  background-color: #e0b800; /* Darker yellow on hover */
+}
