@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const path = require('path');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -68,8 +69,6 @@ const FormData = mongoose.model('HistoricalLocation', formSchema);
 app.get('/api/geojson', async (req, res) => {
   try {
     const features = await GeoModel.find(); // Fetch data from activistdata
-    console.log('Features retrieved from MongoDB:', features); // Debugging
-
     res.json({
       type: "FeatureCollection",
       features: features.map((feature) => ({
@@ -84,9 +83,22 @@ app.get('/api/geojson', async (req, res) => {
   }
 });
 
+// Serve HTML files
+app.get('/home-page', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'home-page.html'));
+});
+
+app.get('/about', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'about.html'));
+});
+
+app.get('/map-explore', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'map-explore.html'));
+});
+
 // Serve the form HTML
 app.get('/form', (req, res) => {
-  res.sendFile(__dirname + '/Form.html');
+  res.sendFile(path.resolve(__dirname, 'Form.html'));
 });
 
 // Handle form submissions
@@ -123,6 +135,11 @@ app.post('/submit', async (req, res) => {
     console.error('Error saving form data:', error);
     res.status(500).send('Error saving data');
   }
+});
+
+// Catch-all route for 404s
+app.use((req, res) => {
+  res.status(404).send('Page not found');
 });
 
 // Start the server
