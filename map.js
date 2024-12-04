@@ -22,8 +22,8 @@ const map = new mapboxgl.Map({
       },
     ],
   },
-  center: [-73.935242, 40.730610], // Starting position [lng, lat]
-  zoom: 12, // Initial zoom level
+  center: [-73.958009, 40.661899], // Starting position [lng, lat]
+  zoom: 12.5, // Initial zoom level
 });
 
 // Add navigation controls

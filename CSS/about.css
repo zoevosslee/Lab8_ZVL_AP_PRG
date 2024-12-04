@@ -6,44 +6,76 @@ body {
   font-family: var(--font-family-roboto);
   color: var(--white);
   overflow-x: hidden; /* Prevent horizontal scrolling */
+  -ms-overflow-style: none; /* Hide scrollbar for IE */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
 }
 
-/* Sticky Top Panel */
-.top-panel-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: var(--black);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+body::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Webkit browsers */
+}
+
+/* Title Container */
+.title-container {
+  position: relative;
+  margin: 50px 30px;
 }
 
 .title {
-  font-family: var(--font-family-montserrat);
-  font-size: var(--font-size-xxl);
+  font-family: var(--font-family-montserrat), sans-serif;
+  font-size: 64px;
   font-weight: 900;
   color: var(--amber);
-  margin: 0;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
 }
 
-.top-panel .button {
+/* Footsteps Vector */
+.vector {
+  position: absolute;
+  top: -40px;
+  left: 450px;
+  width: 150px;
+  height: auto;
+  z-index: 0;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+/* Buttons in Top Right */
+.title-container .nav-buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.title-container .button {
   font-family: var(--font-family-roboto);
   background-color: var(--amber);
   color: var(--black);
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-m);
   font-weight: 600;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  text-transform: uppercase;
 }
 
-.top-panel .button:hover {
-  background-color: var(--status-color--warning);
+.title-container .nav-buttons .button:hover {
+  transform: scale(1.01); /* Slight enlargement on hover */
+  transition: transform 0.2s ease; /* Smooth transition effect */
+}
+
+/* Header Image Styling */
+.rectangle-161 {
+  width: 100%; /* Ensures the image spans the full width of the container */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Ensures the image fills the container */
+  display: block; /* Removes inline spacing below the image */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
 }
 
 /* About Section */
@@ -64,7 +96,7 @@ body {
   font-weight: 900;
   color: var(--amber);
   margin-bottom: 20px;
-  text-align: left; /* Ensure consistent left alignment */
+  text-align: left;
 }
 
 .paths-to-power-is-a,
@@ -83,6 +115,10 @@ body {
 
 .about-1 ul li {
   margin-bottom: 10px;
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-s);
+  line-height: 1.8;
+  text-align: justify;
 }
 
 /* Partners Section */
@@ -96,7 +132,7 @@ body {
 
 .image-container img {
   height: 150px;
-  object-fit: contain; /* Preserve aspect ratio without squishing */
+  object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
@@ -104,7 +140,7 @@ body {
 /* Footer Buttons */
 .button-container {
   display: flex;
-  justify-content: flex-end; /* Align buttons to the right */
+  justify-content: flex-end;
   gap: 20px;
   padding: 20px;
 }
@@ -118,22 +154,38 @@ body {
   border-radius: 5px;
   cursor: pointer;
   font-weight: 600;
-  text-transform: uppercase;
-  font-size: var(--font-size-xs); /* Match top button size */
+  text-transform: none;
+  font-size: var(--font-size-m);
 }
 
 .learn-more:hover {
-  background-color: var(--status-color--warning);
+  transform: scale(1.01);
+  transition: transform 0.2s ease;
 }
 
 /* Hide Scrollbars */
-body::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for Webkit browsers */
+.events-page {
+  overflow: hidden;
 }
 
-body {
-  -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer */
-  scrollbar-width: none; /* Hide scrollbar for Firefox */
+.events-page::-webkit-scrollbar {
+  display: none;
+}
+
+.events-page {
+  scrollbar-width: none;
+}
+
+.events-individual {
+  overflow-y: auto;
+}
+
+.events-individual::-webkit-scrollbar {
+  display: none;
+}
+
+.events-individual {
+  scrollbar-width: none;
 }
 
 /* Responsive Design */
@@ -162,26 +214,15 @@ body {
   .learn-more {
     font-size: var(--font-size-xs);
   }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .nav-buttons {
+    top: 10px;
+    right: 10px;
+    flex-wrap: wrap;
+  }
 }
 
-/* Ensure proper styling for unordered lists in the About section */
-.about-1 ul {
-  font-family: var(--font-family-roboto); /* Apply Roboto font */
-  font-size: var(--font-size-s); /* Match the paragraph font size */
-  line-height: 1.8; /* Ensure consistent spacing */
-  color: var(--white); /* Ensure text color matches the rest */
-  padding-left: 20px; /* Add indentation for bullets */
-  margin-top: 20px; /* Add spacing above the list */
-}
-
-.about-1 ul li {
-  font-family: var(--font-family-roboto); /* Explicitly apply Roboto font */
-  font-size: var(--font-size-s); /* Match the paragraph font size */
-  line-height: 1.8; /* Maintain line spacing consistency */
-  margin-bottom: 10px; /* Add spacing between list items */
-  text-align: justify; /* Align text to match the paragraph style */
-}
-
-.about-1 ul li strong {
-  font-weight: 700; /* Ensure bold text for emphasis */
-}
