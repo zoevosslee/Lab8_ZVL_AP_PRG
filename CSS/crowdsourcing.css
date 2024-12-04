@@ -57,6 +57,8 @@ body {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
+  z-index: 1000;
 }
 
 .title-container .button:hover {
@@ -182,47 +184,64 @@ button[type="submit"]:hover {
   border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Form Container */
-.form-container {
-  margin-top: 20px;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.05); /* Subtle contrast */
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  gap: 15px; /* Add space between elements */
-}
-
-/* Form Labels and Inputs */
-label {
-  font-size: 1rem;
+/* Form Header (h1) */
+.form-container h1 {
+  font-size: var(--font-size-m); /* Use medium font size */
+  font-family: var(--font-family-roboto); /* Use Roboto font */
   font-weight: bold;
-  color: #fff;
-  margin-bottom: 5px;
+  color: #fff; /* White text */
+  margin-bottom: 20px; /* Space below the header */
+  margin-top: 20px; /* Space above the header */
+  text-align: left; /* Center-align the header */
 }
 
-input, textarea, button {
+/* Form Header (h3) */
+.form-container h3 {
+  font-size: var(--font-size-s); /* Use medium font size */
+  font-family: var(--font-family-roboto); /* Use Roboto font */
+  font-weight: bold;
+  color: #fff; /* White text */
+  margin-bottom: 10px; /* Space below the header */
+  margin-top: 10px; /* Space above the header */
+  text-align: left; /* Center-align the header */
+}
+
+/* Form Labels */
+.form-container label {
+  font-size: var(--font-size-s); /* Use medium font size */
+  font-family: var(--font-family-roboto); /* Use Roboto font */
+  font-weight: bold;
+  color: #fff; /* White text */
+  margin-bottom: 20px; /* Space below the label */
+  margin-top: 20px; /* Space above the label */
+}
+
+/* Form Inputs and Textareas */
+input, textarea {
   width: 100%; /* Full width */
-  padding: 10px;
-  font-size: 1rem;
+  padding: 15px; /* Add padding for better spacing inside inputs */
+  font: var(--font-family-roboto);
+  font-size: var(--font-size-s); /* Use medium font size */
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle background */
   color: #fff;
+  margin-bottom: 15px; /* Add space below inputs */
+  margin-top:15px;
 }
 
 /* Textareas */
 textarea {
   resize: vertical; /* Allow vertical resizing */
-  height: 100px; /* Set a reasonable height */
+  height: 150px; /* Larger height for better usability */
 }
 
 /* Submit Button */
 button[type="submit"] {
   margin-top: 20px; /* Add space above */
   padding: 10px 20px;
-  font-size: 1.1rem;
+  font: var(--font-family-roboto);
+  font-size: var(--font-size-m); /* Use medium font size */
   font-weight: bold;
   background-color: var(--amber, #FFC107);
   color: #000;
@@ -233,9 +252,8 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #e0b800;
+  background-color: #e0b800; /* Darker yellow on hover */
 }
-
 /* Ensure Scroll Completes */
 .scroll {
   display: flex;
@@ -326,13 +344,14 @@ button[type="submit"]:hover {
   right: 30px; /* Adjust for right alignment */
   display: flex;
   gap: 15px;
+  z-index: 1000;
 }
 
 .nav-buttons .button {
   font-family: 'Roboto', sans-serif;
   background-color: var(--amber, #FFC107); /* Bright yellow background */
   color: #000; /* Black text */
-  font-size: 18px; /* Larger font size */
+  font-size: var(--font-size-m); 
   font-weight: 600;
   border: none;
   padding: 15px 25px; /* Larger padding for a bigger button */
@@ -340,6 +359,8 @@ button[type="submit"]:hover {
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add button shadow */
   transition: transform 0.2s ease, background-color 0.3s ease;
+  text-decoration: none;
+
 }
 
 .nav-buttons .button:hover {
