@@ -4,6 +4,12 @@ body {
   padding: 0;
   background-color: #000;
   font-family: var(--font-family-roboto), sans-serif;
+  overflow: hidden; /* Prevent scrolling for the entire body */
+  scrollbar-width: none; /* Hide scrollbars for Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Hide scrollbars for Chrome, Safari */
 }
 
 /* Home Page Layout */
@@ -18,7 +24,6 @@ body {
   flex-grow: 1;
   overflow: hidden;
 }
-
 /* Left Column */
 .left-column {
   width: 40%;
@@ -37,33 +42,31 @@ body {
   display: none; /* Hide scrollbars for Chrome, Safari, Opera */
 }
 
-/* Title Container */
 .title-container {
-  position: relative; /* Ensures vector is positioned correctly */
-  margin: 20px 30px; /* Consistent spacing */
+  position: relative;
+  margin: 30px, 50px; /* Adjust margins to move the title closer to the top */
 }
 
-/* Title Styling */
 .title {
   font-family: var(--font-family-montserrat), sans-serif;
-  font-size: 64px; /* Matches the font size */
-  font-weight: 900; /* Matches the font weight */
-  color: var(--amber); /* Uses the amber color */
-  margin-bottom: 30px; /* Space below the title */
-  position: relative; /* Required for layering the vector */
-  z-index: 1; /* Ensures title stays on top of the vector */
+  font-size: 64px;
+  font-weight: 900;
+  color: var(--amber);
+  margin-bottom: 10px; /* Reduce margin below the title */
+  position: relative;
+  z-index: 1;
 }
 
-/* Footsteps Vector Styling */
+/* Footsteps Vector */
 .vector {
-  position: absolute; /* Positioned relative to the container */
-  top: -40px; /* Aligns vector with the title */
-  left: 450px; /* Adjusts the vector horizontally */
-  width: 150px; /* Ensures consistent size */
-  height: auto; /* Maintains aspect ratio */
-  z-index: 0; /* Places the vector behind the title */
-  opacity: 0.8; /* Slight transparency for subtlety */
-  pointer-events: none; /* Prevents interaction with the vector */
+  position: absolute;
+  top: -40px; /* Adjust placement behind the title */
+  left: 450px; /* Fine-tune horizontal alignment */
+  width: 150px; /* Scale size to fit nicely behind the title */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 0; /* Place behind the title */
+  opacity: 0.8; /* Subtle transparency */
+  pointer-events: none; /* Prevent interaction */
 }
 
 /* Navigation Buttons Styling */
@@ -77,30 +80,31 @@ body {
 
 .nav-buttons .button {
   font-family: var(--font-family-roboto);
-  background-color: var(--amber); /* Matches the amber color */
+  background-color: var(--amber);
   color: var(--black);
   font-size: var(--font-size-m);
   font-weight: 600;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px; /* Consistent button shape */
+  border-radius: 5px;
   cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease; /* Smooth transitions */
 }
 
 .nav-buttons .button:hover {
   transform: scale(1.01); /* Enlarges slightly on hover */
-  transition: transform 0.2s ease; /* Smooth hover transition */
 }
 
 /* Description Box */
 .description-box {
-  background-color: #222;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05); /* Transparent background */
   color: #fff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-  margin-top: 30px; /* Add spacing below the title */
-  margin-bottom: 25px;
+  margin-top: 50px; /* Add spacing below the title */
+  margin-bottom: 30px;
 }
 
 .mapping-title {
@@ -108,7 +112,7 @@ body {
   font-size: 36px;
   font-weight: 600;
   color: var(--amber);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .description-text {
@@ -125,13 +129,15 @@ body {
   font-family: var(--font-family-roboto), sans-serif;
   font-size: 1.2rem;
   border: none;
-  padding: 12px 25px;
+  padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  text-transform: none; /* Prevent all-caps transformation */
+  text-decoration: none;
 }
 
 .learn-more:hover {
-  transform: scale(1.01); /* Slight enlargement on hover */
+  transform: scale(1.02); /* Slight enlargement on hover */
   transition: transform 0.2s ease; /* Smooth transition effect */
 }
 
@@ -146,9 +152,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #222;
-  padding: 15px;
-  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05); /* Transparent background */
   color: var(--amber);
   font-family: var(--font-family-roboto), sans-serif;
   font-weight: 900;
@@ -162,7 +169,7 @@ body {
   height: 36px;
 }
 
-.button:hover {
+.button-container:hover {
   transform: scale(1.01); /* Slight enlargement on hover */
   transition: transform 0.2s ease; /* Smooth transition effect */
 }

@@ -78,62 +78,64 @@ body::-webkit-scrollbar {
 }
 
 /* About Section */
-.about-1,
-.partners-section,
-.contact {
+.about-1 {
   max-width: 90%;
   margin: 50px auto;
   padding: 20px;
-  display: block;
-}
-
-.about-paths-to-power,
-.partners-and-current,
-.place {
-  font-family: var(--font-family-montserrat);
-  font-size: var(--font-size-xl);
-  font-weight: 900;
-  color: var(--amber);
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-.paths-to-power-is-a,
-.we-are-always-lookin {
-  font-family: var(--font-family-roboto);
-  font-size: var(--font-size-s);
+  color: #fff;
+  font-family: "Roboto", sans-serif; /* Default font for body text */
   line-height: 1.8;
-  text-align: justify;
-  margin: 20px 0;
+  background-color: #000;
 }
 
-.about-1 ul {
+/* XL Section Heading */
+.section-heading-xl {
+  font-size: var(--font-size-xl); /* Extra-large font size from styleguide */
+  font-family: "Montserrat", sans-serif; /* Montserrat for headings */
+  font-weight: 700; /* Bold weight for emphasis */
+  color: var(--amber); /* Amber color for highlight */
+  margin-top: 30px; /* Spacing above the heading */
+  margin-bottom: 20px; /* Spacing below the heading */
+  line-height: 1.2; /* Tighten line spacing for large text */
+  text-align: left; /* Ensure alignment matches design */
+}
+
+/* Section Headings */
+.section-heading {
+  font-size: var(--font-size-l); /* Referencing styleguide large size */
+  font-family: var(--font-family-roboto), sans-serif; /* Montserrat for headings */
+  font-weight: 700; /* Bold weight for emphasis */
+  color: var(--amber); /* Highlight color for headings */
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* Body Text */
+.paths-to-power-is-a {
+  font-size: var(--font-size-m); /* Referencing styleguide medium size */
+  font-family: var(--font-family-roboto), sans-serif; /* Roboto for body text */
+  font-weight: 400; /* Regular weight for readability */
+  margin-bottom: 15px;
+}
+
+/* Lists */
+.grant-focus-list,
+.eligibility-list,
+.requirements-list,
+.evaluation-list {
   padding-left: 20px;
   list-style-type: disc;
 }
 
-.about-1 ul li {
+.grant-focus-list li,
+.eligibility-list li,
+.requirements-list li,
+.evaluation-list li {
+  font-size: var(--font-size-m); /* Body font size from styleguide */
+  font-family: "Roboto", sans-serif; /* Roboto for list items */
+  font-weight: 400; /* Regular weight for consistency */
+  line-height: 1.6; /* Ensure readability */
   margin-bottom: 10px;
-  font-family: var(--font-family-roboto);
-  font-size: var(--font-size-s);
-  line-height: 1.8;
-  text-align: justify;
-}
-
-/* Partners Section */
-.image-container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-
-.image-container img {
-  height: 150px;
-  object-fit: contain;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Footer Buttons */
@@ -162,66 +164,19 @@ body::-webkit-scrollbar {
   transition: transform 0.2s ease;
 }
 
-/* Hide Scrollbars */
-.events-page {
-  overflow: hidden;
-}
-
-.events-page::-webkit-scrollbar {
-  display: none;
-}
-
-.events-page {
-  scrollbar-width: none;
-}
-
-.events-individual {
-  overflow-y: auto;
-}
-
-.events-individual::-webkit-scrollbar {
-  display: none;
-}
-
-.events-individual {
-  scrollbar-width: none;
-}
-
-/* Responsive Design */
+/* Responsive Design Adjustments */
 @media (max-width: 768px) {
-  .about-1,
-  .partners-section,
-  .contact {
-    max-width: 95%;
-    padding: 10px;
-  }
-
-  .image-container img {
-    max-width: calc(50% - 20px);
+  .section-heading {
+    font-size: var(--font-size-m); /* Slightly smaller for smaller screens */
   }
 
   .paths-to-power-is-a {
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-s); /* Adjusted for smaller screens */
   }
 
-  .about-paths-to-power,
-  .partners-and-current,
-  .place {
-    font-size: var(--font-size-l);
+  .grant-focus-list li,
+  .eligibility-list li,
+  .requirements-list li,
+  .evaluation-list li {
+    font-size: var(--font-size-s); /* Smaller font for lists on smaller screens */
   }
-
-  .learn-more {
-    font-size: var(--font-size-xs);
-  }
-
-  .title {
-    font-size: 48px;
-  }
-
-  .nav-buttons {
-    top: 10px;
-    right: 10px;
-    flex-wrap: wrap;
-  }
-}
-
