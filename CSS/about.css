@@ -1,0 +1,350 @@
+/* screen - about */
+
+.about {
+  align-items: flex-end;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  height: 1117px;
+  padding: 6.7px 0;
+  width: 1728px;
+}
+
+.about .overlap-group4 {
+  height: 414px;
+  position: relative;
+  width: 1728px;
+}
+
+.about .overlap-group3 {
+  height: 414px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1728px;
+}
+
+.about .title {
+  -webkit-text-stroke: 2px transparent;
+  color: var(--amber);
+  font-weight: 900;
+  left: 72px;
+  line-height: normal;
+  position: absolute;
+  top: 34px;
+  white-space: nowrap;
+  width: 623px;
+}
+
+.about .vector {
+  height: 166px;
+  left: 517px;
+  position: absolute;
+  top: 0;
+  width: 178px;
+}
+
+.about .rectangle-161 {
+  cursor: pointer;
+  height: 266px;
+  object-fit: cover;
+  top: 148px;
+  width: 1728px;
+}
+
+.about .top-panel {
+  align-items: flex-start;
+  display: flex;
+  gap: 12px;
+  height: 32px;
+  justify-content: flex-end;
+  left: 1280px;
+  min-width: 417px;
+  position: absolute;
+  top: 21px;
+}
+
+.about .header-auth {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  position: relative;
+  width: 101px;
+}
+
+.about .button {
+  align-items: center;
+  background-color: var(--amber);
+  border: 1px solid;
+  border-color: var(--black);
+  border-radius: 8px;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 8px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px;
+  position: relative;
+}
+
+.about .button-1 {
+  color: var(--heavy-metal);
+  font-weight: 400;
+  line-height: 16px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .header-auth-1 {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  position: relative;
+  width: 137px;
+}
+
+.about .about-1::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.about .about-1 {
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 288px;
+  height: 515px;
+  margin-left: 33.0px;
+  margin-top: 55px;
+  overflow: hidden;
+  overflow-y: scroll;
+  width: 1593px;
+}
+
+.about .path {
+  height: 8px;
+  margin-left: 315.5px;
+  margin-top: -296px;
+  width: 15px;
+}
+
+.about .group-container {
+  height: 1366px;
+  position: relative;
+  width: 1593px;
+}
+
+.about .group-114 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  left: 0;
+  min-height: 604px;
+  position: absolute;
+  top: 0;
+  width: 1593px;
+}
+
+.about .about-paths-to-power {
+  -webkit-text-stroke: 2px transparent;
+  color: var(--amber);
+  font-weight: 900;
+  line-height: normal;
+  margin-left: 8px;
+  margin-top: -2px;
+  min-height: 67px;
+  width: 623px;
+}
+
+.about .overlap-group {
+  height: 536px;
+  position: relative;
+  width: 1593px;
+}
+
+.about .rectangle-27 {
+  height: 448px;
+  top: 0;
+  width: 1593px;
+}
+
+.about .paths-to-power-is-a {
+  -webkit-text-stroke: 1px transparent;
+  left: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 19px;
+  width: 1500px;
+}
+
+.about .span-1 {
+  color: var(--white);
+  font-weight: 400;
+}
+
+.about .span7 {
+  color: var(--white);
+  font-weight: 900;
+}
+
+.about .group-114-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  left: 0;
+  min-height: 799px;
+  position: absolute;
+  top: 567px;
+  width: 1593px;
+}
+
+.about .overlap-group1 {
+  height: 577px;
+  margin-top: -2px;
+  position: relative;
+  width: 1593px;
+}
+
+.about .rectangle-27-1 {
+  height: 515px;
+  left: 0;
+  position: absolute;
+  top: 62px;
+  width: 1593px;
+}
+
+.about .partners-and-current {
+  -webkit-text-stroke: 2px transparent;
+  color: var(--amber);
+  font-weight: 900;
+  left: 8px;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 1044px;
+}
+
+.about .image-53 {
+  height: 166px;
+  left: 71px;
+  top: 109px;
+  width: 432px;
+}
+
+.about .image-54 {
+  height: 193px;
+  left: 628px;
+  top: 106px;
+  width: 336px;
+}
+
+.about .bed-stuy-restoration-corporation {
+  color: var(--white);
+  font-weight: 900;
+  left: 246px;
+  line-height: normal;
+  position: absolute;
+  top: 345px;
+  width: 207px;
+}
+
+.about .image-55 {
+  height: 169px;
+  left: 71px;
+  top: 345px;
+  width: 140px;
+}
+
+.about .image-57 {
+  height: 183px;
+  left: 1089px;
+  top: 92px;
+  width: 271px;
+}
+
+.about .contact {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-height: 172px;
+  width: 1597px;
+}
+
+.about .place {
+  -webkit-text-stroke: 2px transparent;
+  color: var(--amber);
+  font-weight: 900;
+  line-height: normal;
+  margin-left: 8px;
+  margin-top: -2px;
+  min-height: 67px;
+  width: 623px;
+}
+
+.about .overlap-group-1 {
+  align-items: flex-start;
+  background-image: url(../img/rectangle-27-1.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 105px;
+  justify-content: flex-end;
+  min-width: 1593px;
+  padding: 23px 17px;
+}
+
+.about .we-are-always-lookin {
+  -webkit-text-stroke: 1px transparent;
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 56px;
+  width: 1548px;
+}
+
+.about .button-container {
+  align-items: flex-start;
+  display: flex;
+  gap: 29px;
+  margin-right: 59px;
+  margin-top: 31px;
+  min-width: 433px;
+}
+
+.about .button-2 {
+  align-items: center;
+  background-color: var(--amber);
+  border: 1px solid;
+  border-color: var(--heavy-metal);
+  border-radius: 8px;
+  display: flex;
+  gap: 8px;
+  height: 39px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 12px;
+  position: relative;
+  width: 202px;
+}
+
+.about .button-3 {
+  color: var(--eerie-black);
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: -5.50px;
+  margin-top: -7.50px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .rectangle {
+  left: 0;
+  position: absolute;
+}
