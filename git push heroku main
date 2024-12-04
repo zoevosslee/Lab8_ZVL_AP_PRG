@@ -1,0 +1,19 @@
+[33m32ab983[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mzoe-branch[m[33m, [m[1;31morigin/zoe-branch[m[33m, [m[1;31morigin/old-main[m[33m, [m[1;31morigin/new-branch[m[33m, [m[1;32mold-main[m[33m, [m[1;32mnew-branch[m[33m, [m[1;32mNew-main[m[33m)[m HEAD@{0}: checkout: moving from new-branch to zoe-branch
+[33m32ab983[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mzoe-branch[m[33m, [m[1;31morigin/zoe-branch[m[33m, [m[1;31morigin/old-main[m[33m, [m[1;31morigin/new-branch[m[33m, [m[1;32mold-main[m[33m, [m[1;32mnew-branch[m[33m, [m[1;32mNew-main[m[33m)[m HEAD@{1}: checkout: moving from old-main to new-branch
+[33m32ab983[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mzoe-branch[m[33m, [m[1;31morigin/zoe-branch[m[33m, [m[1;31morigin/old-main[m[33m, [m[1;31morigin/new-branch[m[33m, [m[1;32mold-main[m[33m, [m[1;32mnew-branch[m[33m, [m[1;32mNew-main[m[33m)[m HEAD@{2}: checkout: moving from new-branch to old-main
+[33m32ab983[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mzoe-branch[m[33m, [m[1;31morigin/zoe-branch[m[33m, [m[1;31morigin/old-main[m[33m, [m[1;31morigin/new-branch[m[33m, [m[1;32mold-main[m[33m, [m[1;32mnew-branch[m[33m, [m[1;32mNew-main[m[33m)[m HEAD@{3}: checkout: moving from zoe-branch to new-branch
+[33m32ab983[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mzoe-branch[m[33m, [m[1;31morigin/zoe-branch[m[33m, [m[1;31morigin/old-main[m[33m, [m[1;31morigin/new-branch[m[33m, [m[1;32mold-main[m[33m, [m[1;32mnew-branch[m[33m, [m[1;32mNew-main[m[33m)[m HEAD@{4}: reset: moving to HEAD
+[33m32ab983[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mzoe-branch[m[33m, [m[1;31morigin/zoe-branch[m[33m, [m[1;31morigin/old-main[m[33m, [m[1;31morigin/new-branch[m[33m, [m[1;32mold-main[m[33m, [m[1;32mnew-branch[m[33m, [m[1;32mNew-main[m[33m)[m HEAD@{5}: checkout: moving from main to zoe-branch
+[33m32ab983[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mzoe-branch[m[33m, [m[1;31morigin/zoe-branch[m[33m, [m[1;31morigin/old-main[m[33m, [m[1;31morigin/new-branch[m[33m, [m[1;32mold-main[m[33m, [m[1;32mnew-branch[m[33m, [m[1;32mNew-main[m[33m)[m HEAD@{6}: commit: added responiveness to the events page
+[33mcc726a7[m[33m ([m[1;31mheroku/main[m[33m)[m HEAD@{7}: commit: Added about page
+[33mb5893e8[m HEAD@{8}: commit: Your commit message
+[33m435b0df[m HEAD@{9}: commit: Added home page
+[33md57a627[m HEAD@{10}: commit: Update map.js to add popups and integrate Stadia tiles
+[33m5c5208e[m HEAD@{11}: commit: Updated map.js to include Stadia Tiles and fixed GeoJSON retrieval
+[33m294fe8e[m HEAD@{12}: commit: Prepare for Heroku deployment
+[33ma5bc7c5[m HEAD@{13}: commit: Enhanced form styling and layout
+[33m825d201[m HEAD@{14}: commit: Complete form with activists and archival materials
+[33m17b056c[m HEAD@{15}: commit: Add root route to fix 'Cannot GET /' error
+[33m5e0e9ea[m HEAD@{16}: commit: Update server.js to handle historical location schema
+[33mced7daa[m HEAD@{17}: commit: Commit
+[33mb57fd48[m HEAD@{18}: clone: from https://github.com/zoevosslee/Lab8_ZVL_AP_PRG.git
