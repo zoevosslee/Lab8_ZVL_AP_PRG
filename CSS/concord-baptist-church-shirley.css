@@ -38,9 +38,28 @@
   width: 623px;
 }
 
+.concord-baptist-church-shirley .title-1 {
+  color: var(--amber);
+  font-weight: 900;
+  left: 350px;
+  line-height: normal;
+  position: absolute;
+  top: 7px;
+  white-space: nowrap;
+  width: 623px;
+}
+
 .concord-baptist-church-shirley .vector {
   height: 126px;
   left: 403px;
+  position: absolute;
+  top: 0;
+  width: 135px;
+}
+
+.concord-baptist-church-shirley .vector-1 {
+  height: 126px;
+  left: 750px;
   position: absolute;
   top: 0;
   width: 135px;
