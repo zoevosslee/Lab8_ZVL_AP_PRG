@@ -52,7 +52,7 @@ map.on('load', () => {
           type: 'circle',
           source: 'mongoLayer',
           paint: {
-            'circle-radius': 10,
+            'circle-radius': 12,
             'circle-color': '#ffd500', // Fill color
             'circle-stroke-color': '#000000', // Outline color
             'circle-stroke-width': 0.5, // Outline width
@@ -75,7 +75,7 @@ map.on('load', () => {
           // Set the popup content to display only the site name
           popup.setLngLat(coordinates)
             .setHTML(`
-              <h3>${properties.Site || 'Unknown Site'}</h3>
+                <h3>${properties.Location || 'No information available'}</h3>
             `)
             .addTo(map);
         });

@@ -12,8 +12,12 @@ body {
 
 /* Title Container */
 .title-container {
-  position: relative; /* Ensures vector and buttons are positioned relative to this container */
+  position: relative;
   margin: 50px 30px;
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  align-items: center;
+  justify-content: space-between;
 }
 
 .title {
@@ -339,12 +343,11 @@ button[type="submit"]:hover {
 
 /* Nav Buttons */
 .nav-buttons {
-  position: absolute;
-  top: 20px; /* Slightly lower */
-  right: 30px; /* Adjust for right alignment */
   display: flex;
   gap: 15px;
-  z-index: 1000;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .nav-buttons .button {

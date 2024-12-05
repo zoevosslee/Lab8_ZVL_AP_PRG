@@ -2,10 +2,12 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #000;
-  font-family: var(--font-family-roboto), sans-serif;
-  overflow: hidden; /* Prevent scrolling for the entire body */
-  scrollbar-width: none; /* Hide scrollbars for Firefox */
+  background-color: var(--black);
+  font-family: var(--font-family-roboto);
+  color: var(--white);
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  -ms-overflow-style: none; /* Hide scrollbar for IE */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
 }
 
 body::-webkit-scrollbar {
@@ -27,24 +29,29 @@ body::-webkit-scrollbar {
 /* Left Column */
 .left-column {
   width: 40%;
-  padding: 50px 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #000;
   position: relative;
   overflow: scroll;
+  padding: 0 30px; /* Add horizontal padding for consistent alignment */
   scrollbar-width: none; /* Hide scrollbars for Firefox */
   -ms-overflow-style: none; /* Hide scrollbars for Internet Explorer */
+  margin-bottom: 20px;
 }
 
 .left-column::-webkit-scrollbar {
   display: none; /* Hide scrollbars for Chrome, Safari, Opera */
 }
 
+/* Title Container */
 .title-container {
-  position: relative;
-  margin: 30px, 50px; /* Adjust margins to move the title closer to the top */
+  position: sticky;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start; /* Align content to the left */
+  width: 100%; /* Full width for alignment consistency */
 }
 
 .title {
@@ -52,7 +59,7 @@ body::-webkit-scrollbar {
   font-size: 64px;
   font-weight: 900;
   color: var(--amber);
-  margin-bottom: 10px; /* Reduce margin below the title */
+  margin-bottom: 30px;
   position: relative;
   z-index: 1;
 }
@@ -60,13 +67,13 @@ body::-webkit-scrollbar {
 /* Footsteps Vector */
 .vector {
   position: absolute;
-  top: -40px; /* Adjust placement behind the title */
-  left: 450px; /* Fine-tune horizontal alignment */
-  width: 150px; /* Scale size to fit nicely behind the title */
-  height: auto; /* Maintain aspect ratio */
-  z-index: 0; /* Place behind the title */
-  opacity: 0.8; /* Subtle transparency */
-  pointer-events: none; /* Prevent interaction */
+  top: 10px;
+  left: 450px;
+  width: 150px;
+  height: auto;
+  z-index: 0;
+  opacity: 0.8;
+  pointer-events: none;
 }
 
 /* Navigation Buttons Styling */
@@ -103,7 +110,7 @@ body::-webkit-scrollbar {
   background-color: rgba(255, 255, 255, 0.05); /* Transparent background */
   color: #fff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-  margin-top: 50px; /* Add spacing below the title */
+  margin-top: 10px; /* Add spacing below the title */
   margin-bottom: 30px;
 }
 
@@ -113,6 +120,7 @@ body::-webkit-scrollbar {
   font-weight: 600;
   color: var(--amber);
   margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 .description-text {
@@ -123,6 +131,7 @@ body::-webkit-scrollbar {
 }
 
 .learn-more {
+  display: inline-block; /* Ensures it behaves like a button */
   background-color: var(--amber);
   color: #000;
   font-weight: 600;
@@ -134,11 +143,16 @@ body::-webkit-scrollbar {
   cursor: pointer;
   text-transform: none; /* Prevent all-caps transformation */
   text-decoration: none;
+  transition: transform 0.2s ease; /* Smooth transition effect */
+  z-index: 1000;
+}
+
+.learn-more span {
+  pointer-events: none; /* Ensures only the a tag is clickable, not the text */
 }
 
 .learn-more:hover {
   transform: scale(1.02); /* Slight enlargement on hover */
-  transition: transform 0.2s ease; /* Smooth transition effect */
 }
 
 /* Button Group */

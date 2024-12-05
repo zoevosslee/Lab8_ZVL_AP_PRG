@@ -1,0 +1,194 @@
+/* General Styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--black);
+  font-family: var(--font-family-roboto);
+  color: var(--white);
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* Hide scrollbar for IE */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Webkit browsers */
+}
+
+/* Title Container */
+.title-container {
+  position: relative;
+  margin: 50px 30px;
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: var(--font-family-montserrat), sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+  color: var(--amber);
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Footsteps Vector */
+.vector {
+  position: absolute;
+  top: -40px;
+  left: 450px;
+  width: 150px;
+  height: auto;
+  z-index: 0;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+/* Buttons in Top Right */
+.title-container .nav-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-buttons .button {
+  font-family: var(--font-family-roboto);
+  background-color: var(--amber);
+  color: var(--black);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.nav-buttons .button:hover {
+  transform: scale(1.01);
+}
+
+/* Header Image Styling */
+.rectangle-161 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* Content Section */
+.content-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  max-width: 90%;
+  margin: 50px auto;
+  gap: 20px;
+  align-items: center; /* Vertically centers child elements */
+  height: calc(50vh - 50px); /* Adjust height to fill screen without causing scroll */
+}
+
+/* Left Text Container */
+.text-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 50%;
+  color: var(--white);
+}
+
+.text-container .section-heading-xl {
+  font-size: var(--font-size-xl); /* Extra-large font size */
+  font-family: var(--font-family-montserrat);
+  font-weight: 700;
+  color: var(--amber); /* Amber highlight */
+  margin-top: 30px;
+  margin-bottom: 20px;
+  line-height: 1.2; /* Tighten line spacing */
+  text-align: left;
+}
+
+.text-container .section-heading {
+  font-size: var(--font-size-l); /* Large font size */
+  font-family: var(--font-family-roboto), sans-serif; /* Roboto for smaller headings */
+  font-weight: 700;
+  color: var(--white); 
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Right Login Container */
+.login-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 50%;
+  background-color: #1a1a1a;
+  padding: 20px;
+  margin-left: 50px;
+  border-radius: 10px;
+}
+
+.login-container .form-group {
+  margin-bottom: 20px;
+}
+
+.login-container .form-label {
+  display: block;
+  font-family: var(--font-family-roboto), sans-serif; /* Roboto for smaller headings */
+  font-size: var(--font-size-m);
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.login-container .form-input {
+  width: 100%;
+  padding: 10px;
+  font-family: var(--font-family-roboto), sans-serif; /* Roboto for smaller headings */
+  font-size: var(--font-size-m);
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  color: var(--white);
+}
+
+.login-container .form-input:focus {
+  outline: none;
+  border-color: var(--amber);
+}
+
+.login-container .login-button {
+  width: 100%;
+  padding: 10px;
+  font-size: var(--font-size-m);
+  font-weight: bold;
+  font-family: var(--font-family-roboto), sans-serif; /* Roboto for smaller headings */
+  background-color: var(--amber);
+  color: var(--black);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login-container .login-button:hover {
+  background-color: #ffcc00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+  }
+
+  .text-container,
+  .login-container {
+    max-width: 100%;
+  }
+}

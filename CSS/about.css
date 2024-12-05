@@ -18,11 +18,15 @@ body::-webkit-scrollbar {
 .title-container {
   position: relative;
   margin: 50px 30px;
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  align-items: center;
+  justify-content: space-between;
 }
 
 .title {
   font-family: var(--font-family-montserrat), sans-serif;
-  font-size: 64px;
+  font-size: var(--font-size-xxl);
   font-weight: 900;
   color: var(--amber);
   margin-bottom: 30px;
@@ -44,12 +48,11 @@ body::-webkit-scrollbar {
 
 /* Buttons in Top Right */
 .title-container .nav-buttons {
-  position: absolute; /* Ensure correct placement relative to title-container */
-  top: 0; /* Align to the top */
-  right: 0; /* Align to the right */
   display: flex;
   gap: 15px;
-  z-index: 1000; /* Ensure it is above other elements */
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .title-container .button {

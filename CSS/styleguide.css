@@ -68,6 +68,14 @@
   letter-spacing: 0;
 }
 
+.header4 {
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
 .single-linebody-base {
   font-family: var(--font-family-inter);
   font-size: var(--font-size-xs);
