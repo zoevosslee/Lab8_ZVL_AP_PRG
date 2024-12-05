@@ -18,6 +18,10 @@ body::-webkit-scrollbar {
 .title-container {
   position: relative;
   margin: 50px 30px;
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  align-items: center;
+  justify-content: space-between;
 }
 
 .title {
@@ -44,11 +48,11 @@ body::-webkit-scrollbar {
 
 /* Buttons in Top Right */
 .title-container .nav-buttons {
-  position: absolute;
-  top: 0;
-  right: 0;
   display: flex;
   gap: 15px;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .nav-buttons .button {
@@ -100,6 +104,30 @@ body::-webkit-scrollbar {
   margin-bottom: 20px; /* Spacing below the heading */
   line-height: 1.2; /* Tighten line spacing for large text */
   text-align: left; /* Ensure alignment matches design */
+}
+
+.login-statement {
+  font-size: var(--font-size-l); /* Extra-large font size from styleguide */
+  font-family: "Montserrat", sans-serif; /* Montserrat for headings */
+  font-weight: 500; /* Bold weight for emphasis */
+  color: var(--white); /* Amber color for highlight */
+  margin-top: 30px; /* Spacing above the heading */
+  margin-bottom: 20px; /* Spacing below the heading */
+  line-height: 1.2; /* Tighten line spacing for large text */
+  text-align: left; /* Ensure alignment matches design */
+}
+
+.no-style-link {
+  text-decoration: none; /* Removes the underline */
+  font-size: inherit;
+  color: inherit; /* Inherits the surrounding text color */
+  font-weight: bold; /* Makes the link bold */
+  text-decoration: underline;
+}
+
+.no-style-link:hover {
+  text-decoration: underline;
+  color: var(--amber); /* Maintains the text color on hover */
 }
 
 /* Section Headings */
