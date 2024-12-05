@@ -33,22 +33,6 @@
   box-sizing: border-box;
 }
 
-.surname-1 {
-  top: 27px;
-}
-
-.surname-2 {
-  top: 165px;
-}
-
-.span {
-  color: var(--white);
-}
-
-.span1 {
-  color: var(--amber);
-}
-
 .back-to-map {
   color: var(--black);
   font-weight: 600;
@@ -65,6 +49,71 @@
   width: 30px;
 }
 
+.shirleys-yearbook-p {
+  color: var(--white);
+  font-weight: 600;
+  left: 723px;
+  line-height: normal;
+  position: absolute;
+  top: 598px;
+  width: 742px;
+}
+
+.rectangle-164 {
+  height: 54px;
+  left: 5px;
+  position: absolute;
+  top: 0;
+  width: 564px;
+}
+
+.x1937-current-site-c {
+  color: var(--amber);
+  font-weight: 600;
+  left: 191px;
+  line-height: normal;
+  position: absolute;
+  top: 81px;
+  width: 365px;
+}
+
+.college {
+  color: var(--amber);
+  font-weight: 600;
+  left: 192px;
+  line-height: normal;
+  position: absolute;
+  top: 184px;
+  white-space: nowrap;
+  width: 366px;
+}
+
+.college-1 {
+  color: var(--amber);
+  font-weight: 600;
+  left: 191px;
+  line-height: normal;
+  position: absolute;
+  top: 229px;
+  white-space: nowrap;
+  width: 272px;
+}
+
+.span {
+  color: var(--white);
+}
+
+.span1 {
+  color: var(--amber);
+}
+
+.image-68 {
+  height: 352px;
+  left: 830px;
+  top: 214px;
+  width: 600px;
+}
+
 .span1-1 {
   color: var(--amber);
   font-weight: 600;
@@ -75,49 +124,17 @@
   font-weight: 600;
 }
 
-.activists {
-  left: 0;
-  letter-spacing: 0;
-  line-height: normal;
+.image {
+  object-fit: cover;
   position: absolute;
-  top: 29px;
-  width: 332px;
 }
 
-.surname-3 {
-  color: var(--amber);
-  font-weight: 600;
-  left: 186px;
-  line-height: normal;
-  position: absolute;
-  width: 593px;
+.surname-1 {
+  left: 158px;
 }
 
-.rectangle-159 {
-  height: 677px;
-  left: 1131px;
-  position: absolute;
-  top: 122px;
-  width: 455px;
-}
-
-.co-working-space-alpha-space {
-  color: var(--amber);
-  font-weight: 600;
+.surname-2 {
   left: 145px;
-  line-height: normal;
-  position: absolute;
-  top: 0;
-  width: 327px;
-}
-
-.address-2 {
-  left: 1162px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 145px;
-  width: 402px;
 }
 
 .add-your-story-here {
@@ -130,6 +147,12 @@
   width: 739px;
 }
 
+.group {
+  align-items: flex-start;
+  display: flex;
+  position: absolute;
+}
+
 .image-source {
   color: var(--white);
   font-weight: 300;
@@ -137,52 +160,44 @@
   position: absolute;
 }
 
-.placard-in-the-newly {
-  color: var(--white);
+.surname-3 {
+  color: var(--amber);
   font-weight: 600;
-  left: 735px;
   line-height: normal;
   position: absolute;
-  top: 635px;
-  width: 742px;
+  top: 0;
+  width: 593px;
 }
 
-.image-63 {
-  height: 359px;
-  left: 841px;
-  object-fit: cover;
-  position: absolute;
-  top: 220px;
-  width: 489px;
-}
-
-.source-smithsonian-archives {
+.source-vanity-fair-2020 {
   color: var(--white);
   font-weight: 300;
-  left: 927px;
+  left: 639px;
   line-height: normal;
   position: absolute;
-  top: 584px;
-  width: 494px;
+  top: 801px;
+  width: 537px;
 }
 
-.flyer-from-her-campa {
-  color: var(--white);
+.group-23 {
+  background-image: url(../img/image-2@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 83px;
+  left: 7px;
+  position: absolute;
+  top: 8px;
+  width: 81px;
+}
+
+.co-working-space-alpha-space {
+  color: var(--amber);
   font-weight: 600;
-  left: 735px;
+  left: 145px;
   line-height: normal;
   position: absolute;
-  top: 638px;
-  width: 742px;
-}
-
-.rectangle-165 {
-  height: 351px;
-  left: 876px;
-  object-fit: cover;
-  position: absolute;
-  top: 229px;
-  width: 459px;
+  top: 0;
+  width: 327px;
 }
 
 .public-school {

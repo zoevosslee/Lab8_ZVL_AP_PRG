@@ -19,7 +19,7 @@
   min-width: 1604px;
 }
 
-.x1467-bedford-avenue-shirley .overlap-group8 {
+.x1467-bedford-avenue-shirley .overlap-group7 {
   height: 126px;
   position: relative;
   width: 623px;
@@ -44,7 +44,7 @@
   width: 135px;
 }
 
-.x1467-bedford-avenue-shirley .overlap-group5 {
+.x1467-bedford-avenue-shirley .overlap-group4 {
   height: 62px;
   margin-bottom: 6.94px;
   position: relative;
@@ -70,7 +70,7 @@
   padding: 3px 30px;
 }
 
-.x1467-bedford-avenue-shirley .overlap-group9 {
+.x1467-bedford-avenue-shirley .overlap-group8 {
   height: 876px;
   margin-right: 6.0px;
   margin-top: 2px;
@@ -78,7 +78,7 @@
   width: 1586px;
 }
 
-.x1467-bedford-avenue-shirley .overlap-group6 {
+.x1467-bedford-avenue-shirley .overlap-group5 {
   height: 876px;
   left: 0;
   position: absolute;
@@ -95,14 +95,6 @@
   top: 77px;
   white-space: nowrap;
   width: 400px;
-}
-
-.x1467-bedford-avenue-shirley .rectangle-159 {
-  height: 677px;
-  left: 1131px;
-  position: absolute;
-  top: 122px;
-  width: 455px;
 }
 
 .x1467-bedford-avenue-shirley .line-88 {
@@ -145,7 +137,7 @@
   width: 601px;
 }
 
-.x1467-bedford-avenue-shirley .overlap-group4 {
+.x1467-bedford-avenue-shirley .overlap-group3 {
   height: 421px;
   left: 1px;
   position: absolute;
@@ -163,41 +155,26 @@
 
 .x1467-bedford-avenue-shirley .group-115 {
   flex-direction: column;
-  gap: 14px;
   left: 20px;
   min-height: 313px;
   top: 27px;
   width: 779px;
 }
 
-.x1467-bedford-avenue-shirley .overlap-group2 {
-  height: 124px;
+.x1467-bedford-avenue-shirley .address-container {
+  align-self: center;
+  height: 49px;
+  margin-right: 12.0px;
   position: relative;
-  width: 759px;
-}
-
-.x1467-bedford-avenue-shirley .overlap-group1 {
-  height: 121px;
-  left: 8px;
-  position: absolute;
-  top: 0;
   width: 751px;
-}
-
-.x1467-bedford-avenue-shirley .number {
-  color: var(--amber);
-  font-weight: 600;
-  left: 158px;
-  line-height: normal;
-  position: absolute;
-  top: 50px;
-  width: 572px;
 }
 
 .x1467-bedford-avenue-shirley .address-1 {
   color: var(--amber);
   font-weight: 600;
   left: 158px;
+  line-height: normal;
+  position: absolute;
   top: 0;
   width: 593px;
 }
@@ -212,29 +189,71 @@
   width: 454px;
 }
 
+.x1467-bedford-avenue-shirley .flex-row {
+  align-items: flex-start;
+  display: flex;
+  gap: 7px;
+  height: 75px;
+  min-width: 738px;
+}
+
+.x1467-bedford-avenue-shirley .flex-col {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 75px;
+  width: 159px;
+}
+
 .x1467-bedford-avenue-shirley .year-built {
   color: var(--white);
   font-weight: 600;
-  left: 41px;
   line-height: normal;
-  position: absolute;
-  top: 49px;
+  margin-right: 1px;
+  min-height: 38px;
   width: 117px;
 }
 
 .x1467-bedford-avenue-shirley .historic-uses {
   color: var(--white);
   font-weight: 600;
-  left: 0;
   line-height: normal;
-  position: absolute;
-  top: 93px;
+  min-height: 31px;
   width: 159px;
 }
 
-.x1467-bedford-avenue-shirley .overlap-group3 {
+.x1467-bedford-avenue-shirley .flex-col-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 1px;
+  min-height: 71px;
+  width: 572px;
+}
+
+.x1467-bedford-avenue-shirley .number {
+  color: var(--amber);
+  font-weight: 600;
+  line-height: normal;
+  min-height: 36px;
+  width: 572px;
+}
+
+.x1467-bedford-avenue-shirley .event-space {
+  color: var(--amber);
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 1px;
+  min-height: 28px;
+  white-space: nowrap;
+}
+
+.x1467-bedford-avenue-shirley .overlap-group2 {
   height: 175px;
   margin-left: 4px;
+  margin-top: 14px;
   position: relative;
   width: 755px;
 }
@@ -295,13 +314,6 @@
   width: 547px;
 }
 
-.x1467-bedford-avenue-shirley .address-2 {
-  left: 1162px;
-  letter-spacing: 0;
-  top: 145px;
-  width: 402px;
-}
-
 .x1467-bedford-avenue-shirley .image-source-https {
   left: 0;
   top: 398px;
@@ -317,7 +329,7 @@
   width: 332px;
 }
 
-.x1467-bedford-avenue-shirley .overlap-group7 {
+.x1467-bedford-avenue-shirley .overlap-group6 {
   align-self: flex-end;
   height: 46px;
   margin-right: 138.3px;
@@ -335,7 +347,13 @@
   width: 30px;
 }
 
-.x1467-bedford-avenue-shirley .address-3 {
-  line-height: normal;
+.x1467-bedford-avenue-shirley .group {
+  align-items: flex-start;
+  display: flex;
+  position: absolute;
+}
+
+.x1467-bedford-avenue-shirley .image {
+  object-fit: cover;
   position: absolute;
 }

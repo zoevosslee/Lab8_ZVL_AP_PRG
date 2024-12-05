@@ -19,7 +19,7 @@
   min-width: 1604px;
 }
 
-.concord-baptist-church-alice .overlap-group8 {
+.concord-baptist-church-alice .overlap-group6 {
   height: 126px;
   position: relative;
   width: 623px;
@@ -44,7 +44,7 @@
   width: 135px;
 }
 
-.concord-baptist-church-alice .overlap-group9 {
+.concord-baptist-church-alice .overlap-group7 {
   height: 62px;
   margin-bottom: 6.94px;
   position: relative;
@@ -73,7 +73,7 @@
   padding: 3px 30px;
 }
 
-.concord-baptist-church-alice .overlap-group10 {
+.concord-baptist-church-alice .overlap-group8 {
   align-self: flex-end;
   height: 849px;
   margin-right: -83px;
@@ -82,7 +82,7 @@
   width: 1745px;
 }
 
-.concord-baptist-church-alice .overlap-group5 {
+.concord-baptist-church-alice .overlap-group3 {
   height: 849px;
   left: 0;
   position: absolute;
@@ -132,12 +132,12 @@
   width: 448px;
 }
 
-.concord-baptist-church-alice .overlap-group4 {
+.concord-baptist-church-alice .overlap-group2 {
   height: 404px;
   left: 10px;
   position: absolute;
   top: 445px;
-  width: 799px;
+  width: 779px;
 }
 
 .concord-baptist-church-alice .rectangle-161 {
@@ -145,127 +145,86 @@
   width: 562px;
 }
 
-.concord-baptist-church-alice .group-115 {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  left: 20px;
-  min-height: 286px;
-  position: absolute;
-  top: 27px;
-  width: 779px;
-}
-
-.concord-baptist-church-alice .overlap-group2 {
-  height: 124px;
-  position: relative;
-  width: 759px;
-}
-
-.concord-baptist-church-alice .overlap-group-1 {
-  height: 121px;
-  left: 8px;
-  position: absolute;
-  top: 0;
-  width: 751px;
-}
-
 .concord-baptist-church-alice .number {
   color: var(--amber);
   font-weight: 600;
-  left: 158px;
+  left: 186px;
   line-height: normal;
   position: absolute;
-  top: 50px;
+  top: 77px;
   width: 572px;
 }
 
 .concord-baptist-church-alice .surname {
   color: var(--amber);
   font-weight: 600;
-  left: 159px;
+  left: 187px;
   line-height: normal;
   position: absolute;
-  top: 93px;
+  top: 120px;
   white-space: nowrap;
   width: 366px;
+}
+
+.concord-baptist-church-alice .name-1 {
+  color: var(--amber);
+  font-weight: 600;
+  left: 186px;
+  line-height: normal;
+  position: absolute;
+  top: 209px;
+  width: 593px;
 }
 
 .concord-baptist-church-alice .site-address {
   color: var(--white);
   font-weight: 600;
-  left: 0;
+  left: 28px;
   line-height: normal;
   position: absolute;
-  top: 0;
+  top: 27px;
   width: 454px;
 }
 
 .concord-baptist-church-alice .year-built {
   color: var(--white);
   font-weight: 600;
-  left: 41px;
+  left: 61px;
   line-height: normal;
   position: absolute;
-  top: 49px;
+  top: 76px;
   width: 117px;
 }
 
 .concord-baptist-church-alice .historic-uses {
   color: var(--white);
   font-weight: 600;
-  left: 0;
+  left: 20px;
   line-height: normal;
   position: absolute;
-  top: 93px;
+  top: 120px;
   width: 159px;
-}
-
-.concord-baptist-church-alice .overlap-group3 {
-  height: 148px;
-  margin-left: 4px;
-  position: relative;
-  width: 755px;
-}
-
-.concord-baptist-church-alice .overlap-group1 {
-  height: 148px;
-  left: 17px;
-  position: absolute;
-  top: 0;
-  width: 738px;
-}
-
-.concord-baptist-church-alice .name-1 {
-  color: var(--amber);
-  font-weight: 600;
-  left: 145px;
-  line-height: normal;
-  position: absolute;
-  top: 44px;
-  width: 593px;
-}
-
-.concord-baptist-church-alice .contributor {
-  color: var(--white);
-  font-weight: 600;
-  left: 0;
-  line-height: normal;
-  position: absolute;
-  top: 44px;
-  width: 150px;
 }
 
 .concord-baptist-church-alice .current-uses {
   color: var(--white);
   font-weight: 600;
-  left: 0;
+  left: 24px;
   line-height: normal;
   position: absolute;
-  top: 0;
+  top: 165px;
   white-space: nowrap;
   width: 154px;
+}
+
+.concord-baptist-church-alice .contributor {
+  color: var(--white);
+  font-weight: 600;
+  left: 41px;
+  line-height: normal;
+  position: absolute;
+  top: 209px;
+  width: 150px;
 }
 
 .concord-baptist-church-alice .get-in-touch-with-th {
@@ -285,7 +244,7 @@
   width: 547px;
 }
 
-.concord-baptist-church-alice .overlap-group6 {
+.concord-baptist-church-alice .overlap-group4 {
   align-items: flex-start;
   background-image: url(../img/rectangle-159-1.svg);
   background-size: 100% 100%;
@@ -305,7 +264,7 @@
   width: 412px;
 }
 
-.concord-baptist-church-alice .overlap-group7 {
+.concord-baptist-church-alice .overlap-group5 {
   height: 135px;
   left: 1139px;
   position: absolute;
@@ -357,7 +316,7 @@
   width: 96px;
 }
 
-.concord-baptist-church-alice .overlap-group-2 {
+.concord-baptist-church-alice .overlap-group-1 {
   height: 99px;
   left: 0;
   position: absolute;

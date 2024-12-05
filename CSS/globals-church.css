@@ -57,6 +57,31 @@
   width: 141px;
 }
 
+.back-to-map-revise {
+    color: var(--black);
+    font-weight: 600;
+    line-height: normal;
+    min-height: 55px;
+    width: 141px;
+    background: none; /* Remove any background */
+    border: none; /* Remove default border if it's a button */
+    padding: 0; /* Remove any padding if added by default */
+  }
+  
+  .body1 {
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0;
+    background: none; /* Ensure no background for text */
+  }
+  
+  * {
+    box-sizing: border-box;
+    background: none; /* Ensure all elements have no background */
+  }
+
 .arrow_back {
   height: 30px;
   left: 14px;
@@ -111,6 +136,16 @@
   width: 327px;
 }
 
+.center-for-brooklyn-history {
+  color: var(--amber);
+  font-weight: 600;
+  left: 145px;
+  line-height: normal;
+  position: absolute;
+  top: 71px;
+  width: 593px;
+}
+
 .address-2 {
   left: 1162px;
   letter-spacing: 0;
@@ -130,11 +165,60 @@
   width: 739px;
 }
 
+.image {
+  object-fit: cover;
+  position: absolute;
+}
+
 .image-source {
   color: var(--white);
   font-weight: 300;
   line-height: normal;
   position: absolute;
+}
+
+.image-source-1 {
+  color: var(--white);
+  font-weight: 300;
+  line-height: 810px;
+  position: absolute;
+}
+
+.image-47 {
+  height: 316px;
+  left: 0;
+  position: absolute;
+  top: 80px;
+  width: 562px;
+}
+
+.flyer-distributed-by {
+  color: var(--white);
+  font-weight: 600;
+  left: 735px;
+  line-height: normal;
+  position: absolute;
+  top: 631px;
+  width: 742px;
+}
+
+.source-shirley-chisholm-archives {
+  color: var(--white);
+  font-weight: 300;
+  left: 852px;
+  line-height: normal;
+  position: absolute;
+  top: 565px;
+  width: 548px;
+}
+
+.image-70 {
+  height: 314px;
+  left: 852px;
+  object-fit: cover;
+  position: absolute;
+  top: 245px;
+  width: 487px;
 }
 
 .placard-in-the-newly {
@@ -185,13 +269,58 @@
   width: 459px;
 }
 
-.public-school {
+.flex-col-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 1px;
+  min-height: 71px;
+  width: 572px;
+}
+
+.next-activist {
   color: var(--amber);
-  font-weight: 600;
-  left: 159px;
+  font-weight: 900;
+  left: 154px;
   line-height: normal;
   position: absolute;
-  top: 93px;
+  top: 20px;
   white-space: nowrap;
-  width: 245px;
+  width: 473px;
+}
+
+.ellipse-1 {
+  background-color: #d9d9d9;
+  border: 6px solid;
+  border-color: #ffd000;
+  border-radius: 44.04px/43.92px;
+  height: 88px;
+  left: 4px;
+  position: absolute;
+  top: 6px;
+  width: 88px;
+}
+
+.iconuser {
+  height: 99px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 97px;
+}
+
+.image-46 {
+  height: 83px;
+  left: 7px;
+  top: 8px;
+  width: 83px;
+}
+
+.arrow_back-1 {
+  height: 28px;
+  left: 339px;
+  position: absolute;
+  top: 21px;
+  width: 28px;
 }

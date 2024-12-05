@@ -123,16 +123,6 @@
   width: 1px;
 }
 
-.x1467-bedford-avenue-archive-1 .placard-in-the-newly {
-  color: var(--white);
-  font-weight: 600;
-  left: 735px;
-  line-height: normal;
-  position: absolute;
-  top: 635px;
-  width: 742px;
-}
-
 .x1467-bedford-avenue-archive-1 .source-httpswww {
   color: var(--white);
   font-weight: 300;
@@ -240,6 +230,17 @@
   width: 572px;
 }
 
+.x1467-bedford-avenue-archive-1 .event-space {
+  color: var(--amber);
+  font-weight: 600;
+  left: 159px;
+  line-height: normal;
+  position: absolute;
+  top: 93px;
+  white-space: nowrap;
+  width: 366px;
+}
+
 .x1467-bedford-avenue-archive-1 .address-1 {
   color: var(--amber);
   font-weight: 600;
@@ -336,15 +337,6 @@
   width: 507px;
 }
 
-.x1467-bedford-avenue-archive-1 .image-63 {
-  height: 359px;
-  left: 841px;
-  object-fit: cover;
-  position: absolute;
-  top: 220px;
-  width: 489px;
-}
-
 .x1467-bedford-avenue-archive-1 .image-source-https {
   color: var(--white);
   font-weight: 300;
@@ -373,19 +365,17 @@
   width: 332px;
 }
 
-.x1467-bedford-avenue-archive-1 .activists {
-  left: 0;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 29px;
-  width: 332px;
-}
-
 .x1467-bedford-avenue-archive-1 .iconchevron-down {
+  cursor: pointer;
   height: 30px;
   left: 36px;
   position: absolute;
   top: 0;
   width: 30px;
+}
+
+.x1467-bedford-avenue-archive-1 .group {
+  align-items: flex-start;
+  display: flex;
+  position: absolute;
 }

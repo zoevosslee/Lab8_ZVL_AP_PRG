@@ -1,6 +1,6 @@
-/* screen - brooklyn-college-archive-3 */
+/* screen - brooklyn-college-archive-2 */
 
-.brooklyn-college-archive-3 {
+.brooklyn-college-archive-2 {
   align-items: flex-start;
   background-color: var(--black);
   display: flex;
@@ -10,20 +10,20 @@
   width: 1728px;
 }
 
-.brooklyn-college-archive-3 .overlap-group-container {
+.brooklyn-college-archive-2 .overlap-group-container {
   align-items: center;
   display: flex;
   gap: 759px;
   min-width: 1604px;
 }
 
-.brooklyn-college-archive-3 .overlap-group5 {
+.brooklyn-college-archive-2 .overlap-group3 {
   height: 126px;
   position: relative;
   width: 623px;
 }
 
-.brooklyn-college-archive-3 .title {
+.brooklyn-college-archive-2 .title {
   color: var(--amber);
   font-weight: 900;
   left: 0;
@@ -34,7 +34,7 @@
   width: 623px;
 }
 
-.brooklyn-college-archive-3 .vector {
+.brooklyn-college-archive-2 .vector {
   height: 126px;
   left: 403px;
   position: absolute;
@@ -42,14 +42,14 @@
   width: 135px;
 }
 
-.brooklyn-college-archive-3 .overlap-group2 {
+.brooklyn-college-archive-2 .overlap-group4 {
   height: 62px;
   margin-bottom: 6.94px;
   position: relative;
   width: 222px;
 }
 
-.brooklyn-college-archive-3 .overlap-group {
+.brooklyn-college-archive-2 .overlap-group {
   align-items: flex-end;
   background-color: var(--amber);
   border-radius: 30px;
@@ -63,7 +63,7 @@
   top: 0;
 }
 
-.brooklyn-college-archive-3 .overlap-group6 {
+.brooklyn-college-archive-2 .overlap-group6 {
   height: 885px;
   margin-left: 19px;
   margin-top: 1px;
@@ -71,7 +71,7 @@
   width: 1553px;
 }
 
-.brooklyn-college-archive-3 .overlap-group3 {
+.brooklyn-college-archive-2 .overlap-group2 {
   height: 885px;
   left: 0;
   position: absolute;
@@ -79,7 +79,7 @@
   width: 1553px;
 }
 
-.brooklyn-college-archive-3 .digitized-archival-materials {
+.brooklyn-college-archive-2 .digitized-archival-materials {
   color: var(--white);
   font-weight: 900;
   left: 659px;
@@ -90,7 +90,7 @@
   width: 400px;
 }
 
-.brooklyn-college-archive-3 .rectangle-162 {
+.brooklyn-college-archive-2 .rectangle-162 {
   background-color: var(--white-2);
   border-radius: 20px;
   height: 643px;
@@ -100,7 +100,7 @@
   width: 905px;
 }
 
-.brooklyn-college-archive-3 .line-88 {
+.brooklyn-college-archive-2 .line-88 {
   height: 754px;
   left: 607px;
   object-fit: cover;
@@ -109,7 +109,17 @@
   width: 1px;
 }
 
-.brooklyn-college-archive-3 .source-brooklyn-college {
+.brooklyn-college-archive-2 .plan-of-brooklyn-college-in-1940 {
+  color: var(--white);
+  font-weight: 600;
+  left: 723px;
+  line-height: normal;
+  position: absolute;
+  top: 598px;
+  width: 742px;
+}
+
+.brooklyn-college-archive-2 .source-brooklyn-college {
   color: var(--white);
   font-weight: 300;
   left: 830px;
@@ -119,11 +129,11 @@
   width: 723px;
 }
 
-.brooklyn-college-archive-3 .button-1 {
+.brooklyn-college-archive-2 .button-1 {
   left: 1337px;
 }
 
-.brooklyn-college-archive-3 .button {
+.brooklyn-college-archive-2 .button {
   color: var(--eerie-black);
   font-weight: 600;
   line-height: normal;
@@ -134,7 +144,7 @@
   width: fit-content;
 }
 
-.brooklyn-college-archive-3 .name {
+.brooklyn-college-archive-2 .name {
   color: var(--amber);
   font-weight: 900;
   left: 143px;
@@ -144,7 +154,7 @@
   width: 601px;
 }
 
-.brooklyn-college-archive-3 .overlap-group1 {
+.brooklyn-college-archive-2 .overlap-group1 {
   height: 450px;
   left: 0;
   position: absolute;
@@ -152,7 +162,7 @@
   width: 784px;
 }
 
-.brooklyn-college-archive-3 .address {
+.brooklyn-college-archive-2 .address {
   color: var(--amber);
   font-weight: 600;
   left: 191px;
@@ -162,7 +172,7 @@
   width: 593px;
 }
 
-.brooklyn-college-archive-3 .name-1 {
+.brooklyn-college-archive-2 .name-1 {
   color: var(--amber);
   font-weight: 600;
   left: 191px;
@@ -172,7 +182,7 @@
   width: 593px;
 }
 
-.brooklyn-college-archive-3 .site-address {
+.brooklyn-college-archive-2 .site-address {
   color: var(--white);
   font-weight: 600;
   left: 33px;
@@ -182,7 +192,7 @@
   width: 159px;
 }
 
-.brooklyn-college-archive-3 .year-built {
+.brooklyn-college-archive-2 .year-built {
   color: var(--white);
   font-weight: 600;
   left: 66px;
@@ -192,7 +202,7 @@
   width: 117px;
 }
 
-.brooklyn-college-archive-3 .historic-uses {
+.brooklyn-college-archive-2 .historic-uses {
   color: var(--white);
   font-weight: 600;
   left: 25px;
@@ -202,7 +212,7 @@
   width: 159px;
 }
 
-.brooklyn-college-archive-3 .current-uses {
+.brooklyn-college-archive-2 .current-uses {
   color: var(--white);
   font-weight: 600;
   left: 29px;
@@ -213,7 +223,7 @@
   width: 154px;
 }
 
-.brooklyn-college-archive-3 .contributor {
+.brooklyn-college-archive-2 .contributor {
   color: var(--white);
   font-weight: 600;
   left: 46px;
@@ -223,7 +233,7 @@
   width: 150px;
 }
 
-.brooklyn-college-archive-3 .rectangle-161 {
+.brooklyn-college-archive-2 .rectangle-161 {
   height: 409px;
   left: 0;
   position: absolute;
@@ -231,7 +241,7 @@
   width: 562px;
 }
 
-.brooklyn-college-archive-3 .get-in-touch-with-th {
+.brooklyn-college-archive-2 .get-in-touch-with-th {
   color: transparent;
   font-weight: 400;
   left: 25px;
@@ -241,18 +251,20 @@
   width: 507px;
 }
 
-.brooklyn-college-archive-3 .image-67 {
+.brooklyn-college-archive-2 .image-67 {
   height: 314px;
   left: 9px;
+  object-fit: cover;
+  position: absolute;
   top: 76px;
   width: 553px;
 }
 
-.brooklyn-college-archive-3 .button-2 {
+.brooklyn-college-archive-2 .button-2 {
   left: 689px;
 }
 
-.brooklyn-college-archive-3 .the-paths-to-power-p {
+.brooklyn-college-archive-2 .the-paths-to-power-p {
   color: transparent;
   font-weight: 400;
   left: 658px;
@@ -262,7 +274,7 @@
   width: 883px;
 }
 
-.brooklyn-college-archive-3 .image-source-getty {
+.brooklyn-college-archive-2 .image-source-getty {
   color: var(--white);
   font-weight: 300;
   left: 5px;
@@ -272,7 +284,7 @@
   width: 557px;
 }
 
-.brooklyn-college-archive-3 .overlap-group4 {
+.brooklyn-college-archive-2 .overlap-group5 {
   align-self: center;
   height: 67px;
   margin-left: 360.0px;
@@ -280,7 +292,7 @@
   width: 332px;
 }
 
-.brooklyn-college-archive-3 .activists {
+.brooklyn-college-archive-2 .activists {
   left: 0;
   letter-spacing: 0;
   line-height: normal;
@@ -289,7 +301,7 @@
   width: 332px;
 }
 
-.brooklyn-college-archive-3 .iconchevron-down {
+.brooklyn-college-archive-2 .iconchevron-down {
   height: 30px;
   left: 36px;
   position: absolute;
@@ -297,7 +309,7 @@
   width: 30px;
 }
 
-.brooklyn-college-archive-3 .button-3 {
+.brooklyn-college-archive-2 .button-3 {
   align-items: center;
   background-color: var(--amber);
   border: 1px solid;

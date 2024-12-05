@@ -123,16 +123,6 @@
   width: 1px;
 }
 
-.x1467-bedford-avenue-archive-3 .flyer-from-her-campa {
-  color: var(--white);
-  font-weight: 600;
-  left: 735px;
-  line-height: normal;
-  position: absolute;
-  top: 638px;
-  width: 742px;
-}
-
 .x1467-bedford-avenue-archive-3 .source-httpswww {
   color: var(--white);
   font-weight: 300;
@@ -170,7 +160,7 @@
   font-weight: 600;
   line-height: normal;
   margin-bottom: -5.50px;
-  margin-top: -10px;
+  margin-top: -7.50px;
   position: relative;
   white-space: nowrap;
   width: fit-content;
@@ -223,6 +213,17 @@
   position: absolute;
   top: 50px;
   width: 572px;
+}
+
+.x1467-bedford-avenue-archive-3 .event-space {
+  color: var(--amber);
+  font-weight: 600;
+  left: 159px;
+  line-height: normal;
+  position: absolute;
+  top: 93px;
+  white-space: nowrap;
+  width: 366px;
 }
 
 .x1467-bedford-avenue-archive-3 .address-1 {
@@ -325,15 +326,6 @@
   left: 692px;
 }
 
-.x1467-bedford-avenue-archive-3 .rectangle-165 {
-  height: 351px;
-  left: 876px;
-  object-fit: cover;
-  position: absolute;
-  top: 229px;
-  width: 459px;
-}
-
 .x1467-bedford-avenue-archive-3 .image-source-https {
   color: var(--white);
   font-weight: 300;
@@ -362,16 +354,8 @@
   width: 332px;
 }
 
-.x1467-bedford-avenue-archive-3 .activists {
-  left: 0;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 29px;
-  width: 332px;
-}
-
 .x1467-bedford-avenue-archive-3 .iconchevron-down {
+  cursor: pointer;
   height: 30px;
   left: 36px;
   position: absolute;
@@ -395,4 +379,10 @@
   position: absolute;
   top: 761px;
   width: 177px;
+}
+
+.x1467-bedford-avenue-archive-3 .group {
+  align-items: flex-start;
+  display: flex;
+  position: absolute;
 }

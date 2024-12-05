@@ -210,6 +210,17 @@
   width: 572px;
 }
 
+.x1467-bedford-avenue-archive-4 .event-space {
+  color: var(--amber);
+  font-weight: 600;
+  left: 159px;
+  line-height: normal;
+  position: absolute;
+  top: 93px;
+  white-space: nowrap;
+  width: 366px;
+}
+
 .x1467-bedford-avenue-archive-4 .address-1 {
   color: var(--amber);
   font-weight: 600;
@@ -373,19 +384,17 @@
   width: 332px;
 }
 
-.x1467-bedford-avenue-archive-4 .activists {
-  left: 0;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 29px;
-  width: 332px;
-}
-
 .x1467-bedford-avenue-archive-4 .iconchevron-down {
+  cursor: pointer;
   height: 30px;
   left: 36px;
   position: absolute;
   top: 0;
   width: 30px;
+}
+
+.x1467-bedford-avenue-archive-4 .group {
+  align-items: flex-start;
+  display: flex;
+  position: absolute;
 }

@@ -115,18 +115,18 @@
   left: 740px;
   line-height: normal;
   position: absolute;
-  top: 668px;
+  top: 620px;
   width: 742px;
 }
 
 .brooklyn-college-archive-1 .source-ipothia-club {
   color: var(--white);
   font-weight: 300;
-  left: 852px;
+  left: 830px;
   line-height: normal;
   position: absolute;
-  top: 602px;
-  width: 474px;
+  top: 569px;
+  width: 723px;
 }
 
 .brooklyn-college-archive-1 .button {
@@ -149,24 +149,15 @@
 }
 
 .brooklyn-college-archive-1 .button-1 {
-    align-items: center;
-    background-color: var(--amber);
-    border: 1px solid;
-    border-color: var(--heavy-metal);
-    border-radius: 8px;
-    cursor: pointer;
-    display: flex;
-    gap: 8px;
-    height: 39px;
-    justify-content: center;
-    left: 1337px;
-    overflow: hidden;
-    padding: 22px 12px 12px;  /* Increase top padding by 10px (previous padding: 12px, new padding: 22px) */
-    position: absolute;
-    top: 761px;
-    width: 177px;
-  }
-
+  color: var(--eerie-black);
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: -5.50px;
+  margin-top: -7.50px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
 
 .brooklyn-college-archive-1 .rectangle-163 {
   height: 54px;

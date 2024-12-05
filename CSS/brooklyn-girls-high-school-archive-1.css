@@ -321,7 +321,7 @@
   overflow: hidden;
   padding: 12px;
   position: absolute;
-  top: 800px;
+  top: 775px;
   width: 177px;
 }
 
@@ -371,6 +371,9 @@
   position: absolute;
   top: 29px;
   width: 332px;
+  font-family: "Roboto", sans-serif; /* Assuming you are using Roboto */
+  font-size: 28px; /* If '28px' is implied by 'roboto-normal-white-28px' */
+  color: white;
 }
 
 .brooklyn-girls-high-school-archive-1 .iconchevron-down {
