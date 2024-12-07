@@ -71,7 +71,6 @@ body {
   transition: transform 0.2s ease; /* Smooth transition effect */
 }
 
-
 /* Main Layout */
 .main-layout {
   display: flex;
@@ -84,37 +83,86 @@ body {
   flex: 2; /* Doubled width (previously 1, now 2) */
   max-width: 800px; /* Double the fixed width for the menu */
   background-color: #000;
-  overflow-y: auto; /* Vertical scrolling enabled */
-  padding: 20px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px;
   border-right: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
 }
 
 .scroll {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Space between scroll items */
+  gap: 10px; /* Space between scroll items */
+  padding-bottom: 150px;
 }
 
-.link {
+/* Link Styling */
+.scroll-menu .link {
+  display: flex; /* Arrange image and text side by side */
+  align-items: center; /* Align image and text vertically */
   padding: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.05); /* Transparent background */
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color */
+  transition: transform 0.2s ease; /* Smooth scaling effect */
 }
 
+.scroll-menu .link:hover {
+  transform: scale(1.01); /* Slight enlargement on hover */
+  transition: transform 0.2s ease; /* Smooth transition effect */
+}
+
+
+/* Apply bottom margin to only the last link */
+.scroll-menu .link:last-child {
+  margin-bottom: 20px; /* Add space between the last link and the bottom of the page */
+}
+
+/* Image Styling */
+.img {
+  width: 20%; 
+  height: 20%; 
+  object-fit: fill;
+  z-index: 1000;
+  margin-right: 20px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .image-container {
+    width: 40%; /* Adjust the container size for smaller screens */
+    padding-bottom: 40%; /* Maintain aspect ratio for the circle */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container {
+    width: 30%; /* Further reduce container size for smaller screens */
+    padding-bottom: 30%; /* Maintain aspect ratio for the circle */
+  }
+}
+
+/* Text Container */
+.text-container {
+  flex: 1; /* Allow text to take up remaining space */
+}
+
+/* Larger Subtitle */
 .larger-subtitle {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
   font-weight: 700;
   color: var(--amber);
   margin: 10px 0;
 }
 
-.body2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem;
+.place-description {
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-m);
   color: #fff; /* White text color */
-  line-height: 1.6;
+  line-height: 1.2;
 }
 
 /* Right Map Section */
@@ -162,8 +210,8 @@ body {
 /* Custom Popup Styling */
 .mapboxgl-popup.custom-popup {
   max-width: 300px; /* Limit the width of the popup */
-  font-family: 'Roboto', sans-serif; /* Use a clean, modern font */
-  font-size: 14px; /* Set font size */
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-family-s);
   color: #000; /* Text color */
   border-radius: 8px; /* Rounded corners */
   background-color: #fff; /* White background */
@@ -195,19 +243,71 @@ body {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .scroll-menu {
+    height: calc(100vh - 20px); /* Account for smaller screens */
+    padding-bottom: 40px; /* Add space for scrolling */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 48px; /* Adjust font size for smaller screens */
+  }
+}
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.link {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 150px; /* Limit the image width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+}
+
+.text-container {
+  flex: 1; /* Allow text to take up remaining space */
+}
+
+.larger-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--amber);
+  margin: 0 0 10px;
+}
+
+.body2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.5;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .main-layout {
-    flex-direction: column;
+  .link {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;
+    text-align: center;
   }
 
-  .scroll-menu {
-    max-width: 100%;
-    border-right: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    height: auto;
-    overflow-y: auto;
+  .image-container img {
+    max-width: 100%; /* Allow image to fill smaller screens */
   }
-
-  
+}

@@ -1,0 +1,378 @@
+/* screen - concord-baptist-church-alice */
+
+.concord-baptist-church-alice {
+  align-items: center;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  height: 1117px;
+  overflow: hidden;
+  padding: 18.5px 0;
+  width: 1728px;
+}
+
+.concord-baptist-church-alice .overlap-group-container {
+  align-items: center;
+  display: flex;
+  gap: 759px;
+  margin-right: 36.0px;
+  min-width: 1604px;
+}
+
+.concord-baptist-church-alice .overlap-group6 {
+  height: 126px;
+  position: relative;
+  width: 623px;
+}
+
+.concord-baptist-church-alice .title {
+  color: var(--amber);
+  font-weight: 900;
+  left: 0;
+  line-height: normal;
+  position: absolute;
+  top: 7px;
+  white-space: nowrap;
+  width: 623px;
+}
+
+.concord-baptist-church-alice .vector {
+  height: 126px;
+  left: 403px;
+  position: absolute;
+  top: 0;
+  width: 135px;
+}
+
+.concord-baptist-church-alice .overlap-group7 {
+  height: 62px;
+  margin-bottom: 6.94px;
+  position: relative;
+  width: 222px;
+}
+
+.concord-baptist-church-alice .group-81 {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  height: 62px;
+  left: 0;
+  min-width: 222px;
+  position: absolute;
+  top: 0;
+}
+
+.concord-baptist-church-alice .overlap-group {
+  align-items: flex-end;
+  background-color: var(--amber);
+  border-radius: 30px;
+  display: flex;
+  height: 62px;
+  justify-content: flex-end;
+  min-width: 220px;
+  padding: 3px 30px;
+}
+
+.concord-baptist-church-alice .overlap-group8 {
+  align-self: flex-end;
+  height: 849px;
+  margin-right: -83px;
+  margin-top: 12px;
+  position: relative;
+  width: 1745px;
+}
+
+.concord-baptist-church-alice .overlap-group3 {
+  height: 849px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1176px;
+}
+
+.concord-baptist-church-alice .rectangle-162 {
+  height: 54px;
+  width: 564px;
+}
+
+.concord-baptist-church-alice .concord-baptist-church {
+  color: var(--amber);
+  font-weight: 900;
+  left: 79px;
+  line-height: normal;
+  position: absolute;
+  top: 3px;
+  width: 601px;
+}
+
+.concord-baptist-church-alice .line-88 {
+  height: 754px;
+  left: 604px;
+  object-fit: cover;
+  position: absolute;
+  top: 68px;
+  width: 1px;
+}
+
+.concord-baptist-church-alice .name {
+  color: var(--amber);
+  font-weight: 900;
+  left: 639px;
+  line-height: normal;
+  position: absolute;
+  top: 67px;
+  white-space: nowrap;
+  width: 513px;
+}
+
+.concord-baptist-church-alice .image-48 {
+  height: 677px;
+  left: 639px;
+  top: 108px;
+  width: 448px;
+}
+
+.concord-baptist-church-alice .overlap-group2 {
+  height: 404px;
+  left: 10px;
+  position: absolute;
+  top: 445px;
+  width: 779px;
+}
+
+.concord-baptist-church-alice .rectangle-161 {
+  height: 373px;
+  width: 562px;
+}
+
+.concord-baptist-church-alice .number {
+  color: var(--amber);
+  font-weight: 600;
+  left: 186px;
+  line-height: normal;
+  position: absolute;
+  top: 77px;
+  width: 572px;
+}
+
+.concord-baptist-church-alice .surname {
+  color: var(--amber);
+  font-weight: 600;
+  left: 187px;
+  line-height: normal;
+  position: absolute;
+  top: 120px;
+  white-space: nowrap;
+  width: 366px;
+}
+
+.concord-baptist-church-alice .name-1 {
+  color: var(--amber);
+  font-weight: 600;
+  left: 186px;
+  line-height: normal;
+  position: absolute;
+  top: 209px;
+  width: 593px;
+}
+
+.concord-baptist-church-alice .site-address {
+  color: var(--white);
+  font-weight: 600;
+  left: 28px;
+  line-height: normal;
+  position: absolute;
+  top: 27px;
+  width: 454px;
+}
+
+.concord-baptist-church-alice .year-built {
+  color: var(--white);
+  font-weight: 600;
+  left: 61px;
+  line-height: normal;
+  position: absolute;
+  top: 76px;
+  width: 117px;
+}
+
+.concord-baptist-church-alice .historic-uses {
+  color: var(--white);
+  font-weight: 600;
+  left: 20px;
+  line-height: normal;
+  position: absolute;
+  top: 120px;
+  width: 159px;
+}
+
+.concord-baptist-church-alice .current-uses {
+  color: var(--white);
+  font-weight: 600;
+  left: 24px;
+  line-height: normal;
+  position: absolute;
+  top: 165px;
+  white-space: nowrap;
+  width: 154px;
+}
+
+.concord-baptist-church-alice .contributor {
+  color: var(--white);
+  font-weight: 600;
+  left: 41px;
+  line-height: normal;
+  position: absolute;
+  top: 209px;
+  width: 150px;
+}
+
+.concord-baptist-church-alice .get-in-touch-with-th {
+  color: transparent;
+  font-weight: 400;
+  left: 24px;
+  line-height: 24px;
+  position: absolute;
+  top: 275px;
+  width: 507px;
+}
+
+.concord-baptist-church-alice .image-58 {
+  height: 314px;
+  left: 7px;
+  top: 66px;
+  width: 547px;
+}
+
+.concord-baptist-church-alice .overlap-group4 {
+  align-items: flex-start;
+  background-image: url(../img/rectangle-159-1.svg);
+  background-size: 100% 100%;
+  display: flex;
+  height: 527px;
+  left: 1133px;
+  min-width: 455px;
+  padding: 12px 19px;
+  position: absolute;
+  top: 108px;
+}
+
+.concord-baptist-church-alice .name-2 {
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 422px;
+  width: 412px;
+}
+
+.concord-baptist-church-alice .overlap-group5 {
+  height: 135px;
+  left: 1139px;
+  position: absolute;
+  top: 654px;
+  width: 606px;
+}
+
+.concord-baptist-church-alice .rectangle-160 {
+  cursor: pointer;
+  height: 135px;
+  width: 455px;
+}
+
+.concord-baptist-church-alice .next-activist {
+  color: var(--amber);
+  font-weight: 900;
+  left: 133px;
+  line-height: normal;
+  position: absolute;
+  top: 31px;
+  white-space: nowrap;
+  width: 473px;
+}
+
+.concord-baptist-church-alice .name-3 {
+  color: var(--white);
+  font-weight: 600;
+  left: 133px;
+  line-height: normal;
+  position: absolute;
+  top: 74px;
+  white-space: nowrap;
+  width: 473px;
+}
+
+.concord-baptist-church-alice .arrow_back-1 {
+  height: 28px;
+  left: 318px;
+  position: absolute;
+  top: 32px;
+  width: 28px;
+}
+
+.concord-baptist-church-alice .group-container {
+  height: 99px;
+  left: 22px;
+  position: absolute;
+  top: 18px;
+  width: 96px;
+}
+
+.concord-baptist-church-alice .overlap-group-1 {
+  height: 99px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 96px;
+}
+
+.concord-baptist-church-alice .ellipse-1 {
+  background-color: var(--alto);
+  border: 6px solid;
+  border-color: var(--gold);
+  border-radius: 43.93px;
+  height: 88px;
+  left: 4px;
+  position: absolute;
+  top: 6px;
+  width: 88px;
+}
+
+.concord-baptist-church-alice .iconuser {
+  height: 99px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 96px;
+}
+
+.concord-baptist-church-alice .image-source-https {
+  color: var(--white);
+  font-weight: 300;
+  left: 8px;
+  line-height: normal;
+  position: absolute;
+  top: 388px;
+  width: 557px;
+}
+
+.concord-baptist-church-alice .archival-materials {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 200.0px;
+  margin-top: 12px;
+  min-height: 38px;
+  width: 332px;
+}
+
+.concord-baptist-church-alice .iconchevron-down {
+  cursor: pointer;
+  height: 30px;
+  margin-left: 84.0px;
+  margin-top: 1px;
+  width: 30px;
+}
+
+.concord-baptist-church-alice .rectangle {
+  left: 0;
+  position: absolute;
+  top: 0;
+}

@@ -163,22 +163,22 @@ body::-webkit-scrollbar {
   border-color: var(--amber);
 }
 
-.login-container .login-button {
-  width: 100%;
-  padding: 10px;
-  font-size: var(--font-size-m);
-  font-weight: bold;
-  font-family: var(--font-family-roboto), sans-serif; /* Roboto for smaller headings */
-  background-color: var(--amber);
-  color: var(--black);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+.login-button {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #ffd500; /* Yellow background */
+  color: #000; /* Black text */
+  padding: 10px 20px;
+  border-radius: 5px; /* Rounded corners */
+  text-align: center;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.login-container .login-button:hover {
-  background-color: #ffcc00;
+.login-button:hover {
+  background-color: #e0b800; /* Darker yellow on hover */
+  transform: scale(1.02); /* Slight enlargement on hover */
 }
 
 /* Responsive Design */

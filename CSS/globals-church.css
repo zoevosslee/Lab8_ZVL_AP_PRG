@@ -1,0 +1,326 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900|Roboto:300,400,900,600");
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/673a6a3e2ebc197e5f3f4fcf.673a6a3f2ebc197e5f3f4fd2.a2K2GNI.hcp.png");
+
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.surname-1 {
+  top: 27px;
+}
+
+.surname-2 {
+  top: 165px;
+}
+
+.span {
+  color: var(--white);
+}
+
+.span1 {
+  color: var(--amber);
+}
+
+.back-to-map {
+  color: var(--black);
+  font-weight: 600;
+  line-height: normal;
+  min-height: 42px;
+  width: 141px;
+}
+
+.back-to-map-revise {
+    color: var(--black);
+    font-weight: 600;
+    line-height: normal;
+    min-height: 55px;
+    width: 141px;
+    background: none; /* Remove any background */
+    border: none; /* Remove default border if it's a button */
+    padding: 0; /* Remove any padding if added by default */
+  }
+  
+  .body1 {
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0;
+    background: none; /* Ensure no background for text */
+  }
+  
+  * {
+    box-sizing: border-box;
+    background: none; /* Ensure all elements have no background */
+  }
+
+.arrow_back {
+  height: 30px;
+  left: 14px;
+  position: absolute;
+  top: 16px;
+  width: 30px;
+}
+
+.span1-1 {
+  color: var(--amber);
+  font-weight: 600;
+}
+
+.span2 {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.activists {
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 29px;
+  width: 332px;
+}
+
+.surname-3 {
+  color: var(--amber);
+  font-weight: 600;
+  left: 186px;
+  line-height: normal;
+  position: absolute;
+  width: 593px;
+}
+
+.rectangle-159 {
+  height: 677px;
+  left: 1131px;
+  position: absolute;
+  top: 122px;
+  width: 455px;
+}
+
+.co-working-space-alpha-space {
+  color: var(--amber);
+  font-weight: 600;
+  left: 145px;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 327px;
+}
+
+.center-for-brooklyn-history {
+  color: var(--amber);
+  font-weight: 600;
+  left: 145px;
+  line-height: normal;
+  position: absolute;
+  top: 71px;
+  width: 593px;
+}
+
+.address-2 {
+  left: 1162px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 145px;
+  width: 402px;
+}
+
+.add-your-story-here {
+  color: var(--black);
+  font-weight: 400;
+  left: 0;
+  line-height: normal;
+  position: absolute;
+  top: 11px;
+  width: 739px;
+}
+
+.image {
+  object-fit: cover;
+  position: absolute;
+}
+
+.image-source {
+  color: var(--white);
+  font-weight: 300;
+  line-height: normal;
+  position: absolute;
+}
+
+.image-source-1 {
+  color: var(--white);
+  font-weight: 300;
+  line-height: 810px;
+  position: absolute;
+}
+
+.image-47 {
+  height: 316px;
+  left: 0;
+  position: absolute;
+  top: 80px;
+  width: 562px;
+}
+
+.flyer-distributed-by {
+  color: var(--white);
+  font-weight: 600;
+  left: 735px;
+  line-height: normal;
+  position: absolute;
+  top: 631px;
+  width: 742px;
+}
+
+.source-shirley-chisholm-archives {
+  color: var(--white);
+  font-weight: 300;
+  left: 852px;
+  line-height: normal;
+  position: absolute;
+  top: 565px;
+  width: 548px;
+}
+
+.image-70 {
+  height: 314px;
+  left: 852px;
+  object-fit: cover;
+  position: absolute;
+  top: 245px;
+  width: 487px;
+}
+
+.placard-in-the-newly {
+  color: var(--white);
+  font-weight: 600;
+  left: 735px;
+  line-height: normal;
+  position: absolute;
+  top: 635px;
+  width: 742px;
+}
+
+.image-63 {
+  height: 359px;
+  left: 841px;
+  object-fit: cover;
+  position: absolute;
+  top: 220px;
+  width: 489px;
+}
+
+.source-smithsonian-archives {
+  color: var(--white);
+  font-weight: 300;
+  left: 927px;
+  line-height: normal;
+  position: absolute;
+  top: 584px;
+  width: 494px;
+}
+
+.flyer-from-her-campa {
+  color: var(--white);
+  font-weight: 600;
+  left: 735px;
+  line-height: normal;
+  position: absolute;
+  top: 638px;
+  width: 742px;
+}
+
+.rectangle-165 {
+  height: 351px;
+  left: 876px;
+  object-fit: cover;
+  position: absolute;
+  top: 229px;
+  width: 459px;
+}
+
+.flex-col-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 1px;
+  min-height: 71px;
+  width: 572px;
+}
+
+.next-activist {
+  color: var(--amber);
+  font-weight: 900;
+  left: 154px;
+  line-height: normal;
+  position: absolute;
+  top: 20px;
+  white-space: nowrap;
+  width: 473px;
+}
+
+.ellipse-1 {
+  background-color: #d9d9d9;
+  border: 6px solid;
+  border-color: #ffd000;
+  border-radius: 44.04px/43.92px;
+  height: 88px;
+  left: 4px;
+  position: absolute;
+  top: 6px;
+  width: 88px;
+}
+
+.iconuser {
+  height: 99px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 97px;
+}
+
+.image-46 {
+  height: 83px;
+  left: 7px;
+  top: 8px;
+  width: 83px;
+}
+
+.arrow_back-1 {
+  height: 28px;
+  left: 339px;
+  position: absolute;
+  top: 21px;
+  width: 28px;
+}
