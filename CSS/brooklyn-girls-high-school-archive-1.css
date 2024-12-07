@@ -1,0 +1,396 @@
+/* screen - brooklyn-girls-high-school-archive-1 */
+
+.brooklyn-girls-high-school-archive-1 {
+  align-items: center;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  height: 1117px;
+  padding: 18.5px 44px;
+  width: 1728px;
+}
+
+.brooklyn-girls-high-school-archive-1 .overlap-group-container {
+  align-items: center;
+  align-self: flex-start;
+  display: flex;
+  gap: 759px;
+  min-width: 1604px;
+}
+
+.brooklyn-girls-high-school-archive-1 .overlap-group4 {
+  height: 126px;
+  position: relative;
+  width: 623px;
+}
+
+.brooklyn-girls-high-school-archive-1 .title {
+  color: var(--amber);
+  font-weight: 900;
+  left: 0;
+  line-height: normal;
+  position: absolute;
+  top: 7px;
+  white-space: nowrap;
+  width: 623px;
+}
+
+.brooklyn-girls-high-school-archive-1 .vector {
+  height: 126px;
+  left: 403px;
+  position: absolute;
+  top: 0;
+  width: 135px;
+}
+
+.brooklyn-girls-high-school-archive-1 .overlap-group5 {
+  height: 62px;
+  margin-bottom: 6.94px;
+  position: relative;
+  width: 222px;
+}
+
+.brooklyn-girls-high-school-archive-1 .group-81 {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  height: 62px;
+  left: 0;
+  min-width: 222px;
+  position: absolute;
+  top: 0;
+}
+
+.brooklyn-girls-high-school-archive-1 .overlap-group {
+  align-items: flex-end;
+  background-color: var(--amber);
+  border-radius: 30px;
+  display: flex;
+  height: 62px;
+  justify-content: flex-end;
+  min-width: 220px;
+  padding: 3px 30px;
+}
+
+.brooklyn-girls-high-school-archive-1 .overlap-group7 {
+  height: 845px;
+  margin-right: 44.0px;
+  margin-top: 2px;
+  position: relative;
+  width: 1548px;
+}
+
+.brooklyn-girls-high-school-archive-1 .overlap-group3 {
+  height: 845px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1548px;
+}
+
+.brooklyn-girls-high-school-archive-1 .digitized-archival-materials {
+  color: var(--white);
+  font-weight: 900;
+  left: 654px;
+  line-height: normal;
+  position: absolute;
+  top: 77px;
+  white-space: nowrap;
+  width: 400px;
+}
+
+.brooklyn-girls-high-school-archive-1 .rectangle-162 {
+  background-color: var(--white-2);
+  border-radius: 20px;
+  height: 643px;
+  left: 643px;
+  position: absolute;
+  top: 189px;
+  width: 905px;
+}
+
+.brooklyn-girls-high-school-archive-1 .image-47 {
+  height: 316px;
+  left: 0;
+  position: absolute;
+  top: 80px;
+  width: 562px;
+}
+
+.brooklyn-girls-high-school-archive-1 .line-88 {
+  height: 754px;
+  left: 602px;
+  object-fit: cover;
+  position: absolute;
+  top: 78px;
+  width: 1px;
+}
+
+.brooklyn-girls-high-school-archive-1 .image-50 {
+  height: 505px;
+  left: 681px;
+  object-fit: cover;
+  position: absolute;
+  top: 222px;
+  width: 348px;
+}
+
+.brooklyn-girls-high-school-archive-1 .a-portrait-of-shirle {
+  color: var(--white);
+  font-weight: 600;
+  left: 1130px;
+  line-height: normal;
+  position: absolute;
+  top: 410px;
+  width: 352px;
+}
+
+.brooklyn-girls-high-school-archive-1 .source-httpsfind {
+  color: var(--white);
+  font-weight: 300;
+  left: 689px;
+  line-height: normal;
+  position: absolute;
+  top: 742px;
+  width: 698px;
+}
+
+.brooklyn-girls-high-school-archive-1 .overlap-group2 {
+  height: 399px;
+  left: 0;
+  position: absolute;
+  top: 446px;
+  width: 779px;
+}
+
+.brooklyn-girls-high-school-archive-1 .rectangle-161 {
+  height: 362px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 562px;
+}
+
+.brooklyn-girls-high-school-archive-1 .overlap-group1 {
+  height: 284px;
+  left: 20px;
+  position: absolute;
+  top: 27px;
+  width: 759px;
+}
+
+.brooklyn-girls-high-school-archive-1 .overlap-group-1 {
+  height: 284px;
+  left: 8px;
+  position: absolute;
+  top: 0;
+  width: 751px;
+}
+
+.brooklyn-girls-high-school-archive-1 .number {
+  color: var(--amber);
+  font-weight: 600;
+  left: 158px;
+  line-height: normal;
+  position: absolute;
+  top: 50px;
+  width: 593px;
+}
+
+.brooklyn-girls-high-school-archive-1 .address {
+  color: var(--amber);
+  font-weight: 600;
+  left: 158px;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 593px;
+}
+
+.brooklyn-girls-high-school-archive-1 .name {
+  color: var(--amber);
+  font-weight: 600;
+  left: 158px;
+  line-height: normal;
+  position: absolute;
+  top: 137px;
+  width: 593px;
+}
+
+.brooklyn-girls-high-school-archive-1 .center-for-brooklyn-history {
+  color: var(--amber);
+  font-weight: 600;
+  left: 158px;
+  line-height: normal;
+  position: absolute;
+  top: 180px;
+  width: 593px;
+}
+
+.brooklyn-girls-high-school-archive-1 .site-address {
+  color: var(--white);
+  font-weight: 600;
+  left: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 454px;
+}
+
+.brooklyn-girls-high-school-archive-1 .contributor {
+  color: var(--white);
+  font-weight: 600;
+  left: 13px;
+  line-height: normal;
+  position: absolute;
+  top: 180px;
+  width: 150px;
+}
+
+.brooklyn-girls-high-school-archive-1 .year-built {
+  color: var(--white);
+  font-weight: 600;
+  left: 41px;
+  line-height: normal;
+  position: absolute;
+  top: 49px;
+  width: 117px;
+}
+
+.brooklyn-girls-high-school-archive-1 .historic-uses {
+  color: var(--white);
+  font-weight: 600;
+  left: 0;
+  line-height: normal;
+  position: absolute;
+  top: 93px;
+  width: 159px;
+}
+
+.brooklyn-girls-high-school-archive-1 .current-uses {
+  color: var(--white);
+  font-weight: 600;
+  left: 4px;
+  line-height: normal;
+  position: absolute;
+  top: 137px;
+  white-space: nowrap;
+  width: 154px;
+}
+
+.brooklyn-girls-high-school-archive-1 .get-in-touch-with-th {
+  color: transparent;
+  font-weight: 400;
+  left: 28px;
+  line-height: 24px;
+  position: absolute;
+  top: 270px;
+  width: 507px;
+}
+
+.brooklyn-girls-high-school-archive-1 .rectangle-163 {
+  height: 54px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 564px;
+}
+
+.brooklyn-girls-high-school-archive-1 .name-1 {
+  color: var(--amber);
+  font-weight: 900;
+  left: 60px;
+  line-height: normal;
+  position: absolute;
+  top: 3px;
+  width: 601px;
+}
+
+.brooklyn-girls-high-school-archive-1 .button {
+  align-items: center;
+  background-color: var(--amber);
+  border: 1px solid;
+  border-color: var(--heavy-metal);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  height: 39px;
+  justify-content: center;
+  left: 1332px;
+  overflow: hidden;
+  padding: 12px;
+  position: absolute;
+  top: 775px;
+  width: 177px;
+}
+
+.brooklyn-girls-high-school-archive-1 .button-1 {
+  color: var(--eerie-black);
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: -5.50px;
+  margin-top: -7.50px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.brooklyn-girls-high-school-archive-1 .image-source-https {
+  color: var(--white);
+  font-weight: 300;
+  left: 0;
+  line-height: normal;
+  position: absolute;
+  top: 401px;
+  width: 398px;
+}
+
+.brooklyn-girls-high-school-archive-1 .the-paths-to-power-p {
+  color: transparent;
+  font-weight: 400;
+  left: 653px;
+  line-height: normal;
+  position: absolute;
+  top: 117px;
+  width: 883px;
+}
+
+.brooklyn-girls-high-school-archive-1 .overlap-group6 {
+  height: 67px;
+  margin-left: 360.0px;
+  margin-top: 39px;
+  position: relative;
+  width: 332px;
+}
+
+.brooklyn-girls-high-school-archive-1 .activists {
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 29px;
+  width: 332px;
+  font-family: "Roboto", sans-serif; /* Assuming you are using Roboto */
+  font-size: 28px; /* If '28px' is implied by 'roboto-normal-white-28px' */
+  color: white;
+}
+
+.brooklyn-girls-high-school-archive-1 .iconchevron-down {
+  height: 30px;
+  left: 36px;
+  position: absolute;
+  top: 0;
+  width: 30px;
+}
+
+.brooklyn-college-archive-1 .button-1, 
+.brooklyn-college-archive-1 .button-2 {
+  margin-top: 10px;  /* Adjust the space between buttons */
+  padding: 10px 20px;  /* Add padding for a better button look */
+}
+
+.brooklyn-college-archive-1 .button {
+  display: inline-flex;  /* Prevent buttons from stretching unnecessarily */
+  justify-content: center;
+}
