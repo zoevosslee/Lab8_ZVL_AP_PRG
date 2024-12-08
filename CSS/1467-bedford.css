@@ -281,6 +281,7 @@ body::-webkit-scrollbar {
   transition: transform 0.2s ease; /* Ensures the hover effect transitions smoothly */
 }
 
+
 /* Event Card Hover Effect */
 .event-card:hover {
   transform: scale(1.01); /* Slight enlargement on hover */
@@ -321,23 +322,34 @@ body::-webkit-scrollbar {
   margin-bottom: 30px;
 }
 
-.register-button {
-  font-family: var(--font-family-roboto);
-  background-color: var(--amber);
-  border: none;
+/* Event Card Styling */
+.event-card2 {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  width: 700px;
+  height: 1200px;
   border-radius: 8px;
-  color: var(--black);
-  font-size: var(--font-size-m);
-  font-weight: 600;
-  padding: 10px 20px;
-  cursor: pointer;
-  justify-content: right;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  transition: transform 0.2s ease; /* Ensures the hover effect transitions smoothly */
 }
 
-.register-button:hover {
+/* Event Card Hover Effect */
+.event-card2:hover {
   transform: scale(1.01); /* Slight enlargement on hover */
-  transition: transform 0.2s ease; /* Smooth transition effect */
 }
+
+.event-card2 img {
+  width: 100%; /* Full width of the container */
+  height: 400px; /* Fixed height for uniformity */
+  object-fit: contain; /* Ensures the image fills the dimensions proportionally */
+  border-radius: 8px; /* Rounded corners for the images */
+  margin-bottom: 20px; /* Space between the image and the text */
+}
+
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
