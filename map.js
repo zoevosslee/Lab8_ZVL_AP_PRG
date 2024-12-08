@@ -57,6 +57,7 @@ map.on('load', () => {
             'circle-stroke-color': '#000000', // Outline color
             'circle-stroke-width': 0.5, // Outline width
           },
+          interactive: true,
         });
 
         // Add popup interaction
@@ -84,6 +85,23 @@ map.on('load', () => {
           map.getCanvas().style.cursor = '';
           popup.remove();
         });
+
+        // Add click interaction to navigate to a local HTML page
+        map.on('click', 'mongoLayer', (e) => {
+          const properties = e.features[0].properties;
+          console.log('Feature properties:', properties);
+
+          // Assume each feature has a `page` property in its GeoJSON properties for the relative file path
+          const page = properties.page; // Replace with your actual property name for the file path
+
+          if (page) {
+            console.log(`Redirecting to page: ${page}`);
+            // Redirect to the specific HTML page (relative path)
+            window.location.href = page;
+          } else {
+            console.error('No page defined for this feature.');
+          }
+        });
       } else {
         console.error('No features found in the GeoJSON data.');
       }
@@ -91,4 +109,13 @@ map.on('load', () => {
     .catch(err => {
       console.error('Error fetching GeoJSON data:', err);
     });
+});
+
+map.on('load', () => {
+  console.log('Map loaded successfully!');
+  console.log('Style:', map.getStyle());
+});
+
+map.on('error', (error) => {
+  console.error('Map error:', error);
 });
