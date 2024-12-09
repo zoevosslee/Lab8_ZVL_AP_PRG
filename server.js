@@ -7,7 +7,8 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use(express.static(path.join(__dirname,'')));
+// app.use(express.static(path.join(__dirname,'')));
+app.use(express.static('public'));
 
 // Middleware for cross-origin requests and parsing form data
 app.use(cors());
@@ -85,7 +86,6 @@ app.get('/api/geojson', async (req, res) => {
   }
 });
 
-app.use(express.static('public'));
 
 // Serve the form HTML
 app.get('/form', (req, res) => {
