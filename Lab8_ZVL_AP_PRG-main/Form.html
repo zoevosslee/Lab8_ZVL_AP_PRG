@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Historical Location Data</title>
+    <!-- Mapbox CSS -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+        }
+
+        /* Form Container */
+        .form-container {
+            width: 50%;
+            padding: 20px;
+            overflow-y: auto;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Map Container */
+        #map {
+            width: 50%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Form Section -->
+    <div class="form-container">
+        <h1>Submit Historical Location Data</h1>
+        <form action="/submit" method="POST">
+            <!-- Basic Details -->
+            <label for="organization-name">Organization Name:</label>
+            <input type="text" id="organization-name" name="organization_name" required>
+
+            <label for="site-name">Site Name:</label>
+            <input type="text" id="site-name" name="site_name" required>
+
+            <label for="site-address">Site Address:</label>
+            <input type="text" id="site-address" name="site_address" required>
+
+            <label for="year-built">Year Built:</label>
+            <input type="number" id="year-built" name="year_built">
+
+            <label for="historic-uses">Historic Use(s):</label>
+            <textarea id="historic-uses" name="historic_uses" required></textarea>
+
+            <label for="current-uses">Current Use(s):</label>
+            <textarea id="current-uses" name="current_uses" required></textarea>
+
+            <!-- Associated Activists -->
+            <h3>Associated Activist 1</h3>
+            <label for="activist-1-name">Name:</label>
+            <input type="text" id="activist-1-name" name="associated_activist_1">
+
+            <label for="activist-1-paragraph">Paragraph About Significance (Max 500 Characters):</label>
+            <textarea id="activist-1-paragraph" name="activist_1_paragraph" maxlength="500"></textarea>
+
+            <h3>Associated Activist 2</h3>
+            <label for="activist-2-name">Name:</label>
+            <input type="text" id="activist-2-name" name="associated_activist_2">
+
+            <label for="activist-2-paragraph">Paragraph About Significance (Max 500 Characters):</label>
+            <textarea id="activist-2-paragraph" name="activist_2_paragraph" maxlength="500"></textarea>
+
+            <h3>Associated Activist 3</h3>
+            <label for="activist-3-name">Name:</label>
+            <input type="text" id="activist-3-name" name="associated_activist_3">
+
+            <label for="activist-3-paragraph">Paragraph About Significance (Max 500 Characters):</label>
+            <textarea id="activist-3-paragraph" name="activist_3_paragraph" maxlength="500"></textarea>
+
+            <!-- Archival Materials -->
+            <label for="archival-materials">Archival Materials:</label>
+            <textarea id="archival-materials" name="archival_materials"></textarea>
+
+            <label for="archival-description">Description of Uploaded Archival Materials (Max 500 Characters):</label>
+            <textarea id="archival-description" name="archival_description" maxlength="500"></textarea>
+
+            <!-- Longitude and Latitude Fields -->
+            <label for="lon">Longitude:</label>
+            <input type="number" step="any" id="lon" name="lon" required readonly>
+
+            <label for="lat">Latitude:</label>
+            <input type="number" step="any" id="lat" name="lat" required readonly>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Map Section -->
+    <div id="map"></div>
+
+    <!-- Mapbox JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoienZsMTIxNSIsImEiOiJjbTE4OG1lNnQwOG5lMmpxMnRwNGZnb3drIn0.U_npUNUZEOSOXVi5-SWgHw';
+
+        // Initialize the map
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/zvl1215/cm1dtqpo000qf01qk450z2pv4', // Custom style
+            center: [-73.935242, 40.730610], // Default center (New York City)
+            zoom: 12
+        });
+
+        // Add navigation controls
+        map.addControl(new mapboxgl.NavigationControl());
+
+        // Marker for selected location
+        let marker;
+
+        // Fetch GeoJSON data and add a layer to display it
+        map.on('load', () => {
+            map.addSource('mongoLayer', {
+                type: 'geojson',
+                data: 'https://paths-to-power-zvl-4288f0734099.herokuapp.com/api/geojson'
+            });
+
+            map.addLayer({
+                id: 'mongoLayer',
+                type: 'circle',
+                source: 'mongoLayer',
+                paint: {
+                    'circle-radius': 8,
+                    'circle-color': '#FFD700',
+                    'circle-stroke-color': '#000000',
+                    'circle-stroke-width': 1
+                }
+            });
+        });
+
+        // Click event to get coordinates
+        map.on('click', (e) => {
+            const lon = e.lngLat.lng;
+            const lat = e.lngLat.lat;
+
+            // Update the form fields
+            document.getElementById('lon').value = lon.toFixed(6);
+            document.getElementById('lat').value = lat.toFixed(6);
+
+            // Add or move the marker
+            if (marker) {
+                marker.setLngLat([lon, lat]);
+            } else {
+                marker = new mapboxgl.Marker()
+                    .setLngLat([lon, lat])
+                    .addTo(map);
+            }
+        });
+    </script>
+</body>
+</html>

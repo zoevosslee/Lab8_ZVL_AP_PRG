@@ -1,0 +1,361 @@
+/* screen - concord-baptist-church-archive-4 */
+
+.concord-baptist-church-archive-4 {
+  align-items: flex-start;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+  height: 1147px;
+  padding: 19.0px 44px;
+  width: 1728px;
+}
+
+.concord-baptist-church-archive-4 .overlap-group8 {
+  height: 972px;
+  position: relative;
+  width: 1604px;
+}
+
+.concord-baptist-church-archive-4 .overlap-group6 {
+  height: 972px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1572px;
+}
+
+.concord-baptist-church-archive-4 .title {
+  color: var(--amber);
+  font-weight: 900;
+  left: 0;
+  line-height: normal;
+  position: absolute;
+  top: 7px;
+  white-space: nowrap;
+  width: 623px;
+}
+
+.concord-baptist-church-archive-4 .digitized-archival-materials {
+  color: var(--white);
+  font-weight: 900;
+  left: 678px;
+  line-height: normal;
+  position: absolute;
+  top: 204px;
+  white-space: nowrap;
+  width: 400px;
+}
+
+.concord-baptist-church-archive-4 .rectangle-162 {
+  background-color: var(--white-2);
+  border-radius: 20px;
+  height: 643px;
+  left: 667px;
+  position: absolute;
+  top: 316px;
+  width: 905px;
+}
+
+.concord-baptist-church-archive-4 .line-88 {
+  height: 754px;
+  left: 626px;
+  object-fit: cover;
+  position: absolute;
+  top: 205px;
+  width: 1px;
+}
+
+.concord-baptist-church-archive-4 .vector {
+  height: 129px;
+  left: 403px;
+  position: absolute;
+  top: 0;
+  width: 135px;
+}
+
+.concord-baptist-church-archive-4 .concord-baptist-chur {
+  color: var(--white);
+  font-weight: 600;
+  left: 1093px;
+  top: 345px;
+  width: 414px;
+}
+
+.concord-baptist-church-archive-4 .source-httpswww {
+  color: var(--white);
+  font-weight: 300;
+  left: 708px;
+  line-height: normal;
+  position: absolute;
+  top: 849px;
+  width: 698px;
+}
+
+.concord-baptist-church-archive-4 .rectangle-163 {
+  height: 54px;
+  left: 24px;
+  position: absolute;
+  top: 127px;
+  width: 564px;
+}
+
+.concord-baptist-church-archive-4 .concord-baptist-church {
+  color: var(--amber);
+  font-weight: 900;
+  left: 84px;
+  top: 130px;
+  width: 601px;
+}
+
+.concord-baptist-church-archive-4 .overlap-group4 {
+  height: 404px;
+  left: 24px;
+  position: absolute;
+  top: 568px;
+  width: 799px;
+}
+
+.concord-baptist-church-archive-4 .rectangle-161 {
+  height: 373px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 562px;
+}
+
+.concord-baptist-church-archive-4 .group-115 {
+  flex-direction: column;
+  gap: 14px;
+  left: 20px;
+  min-height: 286px;
+  top: 27px;
+  width: 779px;
+}
+
+.concord-baptist-church-archive-4 .overlap-group2 {
+  height: 124px;
+  position: relative;
+  width: 759px;
+}
+
+.concord-baptist-church-archive-4 .overlap-group {
+  height: 121px;
+  left: 8px;
+  position: absolute;
+  top: 0;
+  width: 751px;
+}
+
+.concord-baptist-church-archive-4 .number {
+  color: var(--amber);
+  font-weight: 600;
+  left: 158px;
+  line-height: normal;
+  position: absolute;
+  top: 50px;
+  width: 572px;
+}
+
+.concord-baptist-church-archive-4 .surname {
+  color: var(--amber);
+  font-weight: 600;
+  left: 159px;
+  line-height: normal;
+  position: absolute;
+  top: 93px;
+  white-space: nowrap;
+  width: 366px;
+}
+
+.concord-baptist-church-archive-4 .site-address {
+  color: var(--white);
+  font-weight: 600;
+  left: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 454px;
+}
+
+.concord-baptist-church-archive-4 .year-built {
+  color: var(--white);
+  font-weight: 600;
+  left: 41px;
+  line-height: normal;
+  position: absolute;
+  top: 49px;
+  width: 117px;
+}
+
+.concord-baptist-church-archive-4 .historic-uses {
+  color: var(--white);
+  font-weight: 600;
+  left: 0;
+  line-height: normal;
+  position: absolute;
+  top: 93px;
+  width: 159px;
+}
+
+.concord-baptist-church-archive-4 .overlap-group3 {
+  height: 148px;
+  margin-left: 4px;
+  position: relative;
+  width: 755px;
+}
+
+.concord-baptist-church-archive-4 .overlap-group1 {
+  height: 148px;
+  left: 17px;
+  position: absolute;
+  top: 0;
+  width: 738px;
+}
+
+.concord-baptist-church-archive-4 .name {
+  color: var(--amber);
+  font-weight: 600;
+  left: 145px;
+  line-height: normal;
+  position: absolute;
+  top: 44px;
+  width: 593px;
+}
+
+.concord-baptist-church-archive-4 .contributor {
+  color: var(--white);
+  font-weight: 600;
+  left: 0;
+  line-height: normal;
+  position: absolute;
+  top: 44px;
+  width: 150px;
+}
+
+.concord-baptist-church-archive-4 .current-uses {
+  color: var(--white);
+  font-weight: 600;
+  left: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 154px;
+}
+
+.concord-baptist-church-archive-4 .get-in-touch-with-th {
+  color: transparent;
+  font-weight: 400;
+  left: 24px;
+  line-height: 24px;
+  position: absolute;
+  top: 275px;
+  width: 507px;
+}
+
+.concord-baptist-church-archive-4 .button {
+  align-items: center;
+  background-color: var(--amber);
+  border: 1px solid;
+  border-color: var(--heavy-metal);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  height: 39px;
+  justify-content: center;
+  left: 731px;
+  overflow: hidden;
+  padding: 12px;
+  position: absolute;
+  top: 888px;
+  width: 177px;
+}
+
+.concord-baptist-church-archive-4 .button-1 {
+  color: var(--eerie-black);
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: -5.50px;
+  margin-top: -7.50px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.concord-baptist-church-archive-4 .image-62 {
+  height: 496px;
+  left: 708px;
+  object-fit: cover;
+  position: absolute;
+  top: 333px;
+  width: 317px;
+}
+
+.concord-baptist-church-archive-4 .overlap-group5 {
+  height: 62px;
+  left: 1382px;
+  position: absolute;
+  top: 28px;
+  width: 222px;
+}
+
+.concord-baptist-church-archive-4 .group-81 {
+  cursor: pointer;
+  height: 62px;
+  left: 0;
+  min-width: 222px;
+  top: 0;
+}
+
+.concord-baptist-church-archive-4 .overlap-group-1 {
+  align-items: flex-end;
+  background-color: var(--amber);
+  border-radius: 30px;
+  display: flex;
+  height: 62px;
+  justify-content: flex-end;
+  min-width: 220px;
+  padding: 3px 30px;
+}
+
+.concord-baptist-church-archive-4 .the-paths-to-power-p {
+  color: transparent;
+  font-weight: 400;
+  left: 677px;
+  line-height: normal;
+  position: absolute;
+  top: 244px;
+  width: 883px;
+}
+
+.concord-baptist-church-archive-4 .overlap-group7 {
+  align-self: center;
+  height: 67px;
+  margin-left: 360.0px;
+  position: relative;
+  width: 332px;
+}
+
+.concord-baptist-church-archive-4 .activists {
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 29px;
+  width: 332px;
+}
+
+.concord-baptist-church-archive-4 .iconchevron-down {
+  height: 30px;
+  left: 36px;
+  position: absolute;
+  top: 0;
+  width: 30px;
+}
+
+.concord-baptist-church-archive-4 .concord-baptist {
+  line-height: normal;
+  position: absolute;
+}
