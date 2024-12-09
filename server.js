@@ -85,6 +85,8 @@ app.get('/api/geojson', async (req, res) => {
   }
 });
 
+app.use(express.static('public'));
+
 // Serve the form HTML
 app.get('/form', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'Form.html'));
