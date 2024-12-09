@@ -9,6 +9,7 @@ const port = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname,'')));
 app.use(express.static('public'));
+app.use(express.static('CSS'));
 
 // Middleware for cross-origin requests and parsing form data
 app.use(cors());
