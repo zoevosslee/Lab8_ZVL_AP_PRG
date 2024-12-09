@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mapping Hip-Hop</title>
+    </head>
+</html>
+
+<!-- The important stuff is here -->
+
+<body>
+<style>
+    /* The element starts off screen. You can name the element whatever.
+     In this case, it is offscreen to the left further than how it is wide.
+     Transition is how the element will come on screen*/
+    .pop-class-left {
+        position: absolute;
+        width: 400;
+        left: -420px; 
+        transition: left 0.3s ease-in-out;
+    }
+
+    /* This is a subclass to make the popup appear. You can call the subclass whatever: ".pop-class.whatever".
+    To make it appear add the subclass to the element in your code. To make it hide, remove the subclass from
+    your element in your code.*/
+    .pop-class.show {
+        left: 20px;
+    }
+    
+</style>
+
+<div class="pop-class-left" id="elementID">
+    <!-- using divs to seperate elements that change and don't change in your popup will make your life much easier-->
+    <div id="divID">
+        <h1>Header</h1>
+    </div>
+    <div id="divID2">
+        <button id="closeButton" style="color: black;">X</button>
+    </div>
+</div>
+
+<script src="./example.js"></script>
+
+</body>
+</html>
