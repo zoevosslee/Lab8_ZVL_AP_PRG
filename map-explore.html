@@ -33,7 +33,7 @@
     <!-- Left Scrollable Section -->
     <div class="scroll-menu">
       <div class="scroll">
-        <a href="brooklyn-girls.html" class="link">
+        <a href="brooklyn-girls.html" class="link", id="link-brooklyn-girls">
           <div class="image-container">
             <img src="img/image-27-2@2x.png" alt="Brooklyn Girls High School Image" />
           </div>
@@ -47,7 +47,7 @@
             </p>
           </div>
         </a>
-        <a href="concord-baptist.html" class="link">
+        <a href="concord-baptist.html" class="link", id="link-concord-baptist">
           <div class="image-container">
             <img src="img/image-21-9@2x.png" alt="Concord Baptist Church Image" />
           </div>
@@ -61,7 +61,7 @@
             </p>
           </div>
         </a>
-        <a href="1467-bedford.html" class="link">
+        <a href="1467-bedford.html" class="link", id="link-bedford-avenue">
           <div class="image-container">
             <img src="img/image-22-2@2x.png" alt="1467 Bedford Avenue Image" />
           </div>
@@ -75,7 +75,7 @@
             </p>
           </div>
         </a>
-        <a href="brooklyn-college.html" class="link">
+        <a href="brooklyn-college.html" class="link", id="link-brooklyn-college">
           <div class="image-container">
             <img src="img/image-21-3@2x.png" alt="Brooklyn College Image" />
           </div>
@@ -104,5 +104,68 @@
   </div>
 
   <script src="map.js"></script>
+  <script>map.on('mouseleave', 'mongoLayer', () => {
+    // Remove highlight when leaving the map point
+    document.querySelectorAll('.link.highlight').forEach((link) => {
+      link.classList.remove('highlight');
+    });
+  });
+  
+  map.on('hover', 'mongoLayer', (e) => {
+    const properties = e.features[0].properties;
+  
+    // Get the id of the clicked feature
+    const featureId = properties.id;
+  
+    // Remove highlight from all links
+    document.querySelectorAll('.link.highlight').forEach((link) => {
+      link.classList.remove('highlight');
+    });
+  
+    // Highlight the corresponding link
+    const link = document.getElementById(featureId);
+    if (link) {
+      link.classList.add('highlight');
+      // Optionally scroll to the link
+      link.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  
+    // Optionally zoom to the marker
+    const coordinates = e.features[0].geometry.coordinates.slice();
+    map.easeTo({
+      center: coordinates,
+      zoom: 14,
+      duration: 1000,
+    });
+  });
+
+  </script>
+
+<script>
+  // Add hover interaction on sidebar links
+  document.querySelectorAll('.link').forEach((link) => {
+    link.addEventListener('mouseenter', () => {
+      const featureId = link.id.replace('link-', ''); // Remove 'link-' prefix to get the correct feature ID
+
+      // Set hover state for the corresponding map point
+      map.setFeatureState(
+        { source: 'mongoLayer', id: featureId },
+        { hover: true }
+      );
+    });
+
+    link.addEventListener('mouseleave', () => {
+      const featureId = link.id.replace('link-', ''); // Remove 'link-' prefix to get the correct feature ID
+
+      // Reset hover state for the corresponding map point
+      map.setFeatureState(
+        { source: 'mongoLayer', id: featureId },
+        { hover: false }
+      );
+    });
+  });
+</script>
+
+
 </body>
 </html>
