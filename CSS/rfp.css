@@ -99,6 +99,20 @@ body::-webkit-scrollbar {
   background-color: #000;
 }
 
+.icon-text-container {
+  display: flex; /* Align items horizontally */
+  align-items: center; /* Vertically center the icon and text */
+  gap: 10px; /* Space between the icon and text */
+}
+
+.icon {
+  width: auto; /* Adjust icon width */
+  height: 60px; /* Maintain aspect ratio */
+  display: block; /* Ensure it behaves like an image block */
+  margin-right: 10px;
+}
+
+
 /* XL Section Heading */
 .section-heading-xl {
   font-size: var(--font-size-xl); /* Extra-large font size from styleguide */

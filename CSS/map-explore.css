@@ -74,8 +74,8 @@ body {
 /* Main Layout */
 .main-layout {
   display: flex;
-  height: 100%; /* Ensure the main layout spans the full height */
-  flex: 1;
+  height: 100vh; /* Ensure it spans the full viewport height */
+  overflow: hidden; /* Prevent overflow from disrupting layout */
 }
 
 /* Left Scrollable Menu */
@@ -84,6 +84,7 @@ body {
   max-width: 800px; /* Double the fixed width for the menu */
   background-color: #000;
   overflow-y: auto; /* Enable vertical scrolling */
+  max-height:calc(100vh-20);
   padding: 10px;
   border-right: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
 }
@@ -129,6 +130,34 @@ body {
   margin-right: 20px;
 }
 
+/* Activist Buttons Container */
+.activist-buttons-container {
+  display: flex; /* Ensure buttons are inline */
+  flex-wrap: wrap; /* Allow wrapping if buttons overflow */
+  gap: 10px; /* Space between buttons */
+  margin-top: 10px; /* Add some space above the buttons */
+  max-width: 100%; /* Prevent overflow */
+}
+
+/* Individual Activist Button */
+.activist-button {
+  background-color: var(--amber, #FFC107); /* Amber color */
+  color: #000; /* Black text */
+  padding: 5px 10px; /* Button padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: var(--font-size-s); /* Small font size */
+  font-weight: 700; /* Bold text */
+  text-align: center; /* Center-align text */
+  display: inline-block; /* Ensure proper block-like behavior */
+  cursor: default; /* Not clickable, just visual */
+  margin-bottom: 5px; /* Space below each button */
+}
+
+.activist-button:hover {
+  transform: scale(1.01); /* Slightly enlarge on hover */
+}
+
+
 /* Responsive Styling */
 @media (max-width: 768px) {
   .image-container {
@@ -173,33 +202,6 @@ body {
   height: 100%; /* Ensure it fills its parent */
   position: relative; /* Required for absolute positioning of buttons */
 }
-
-.right-buttons {
-  position: absolute; /* Position relative to .map-container */
-  bottom: 20px; /* Distance from the bottom */
-  right: 20px; /* Distance from the right edge */
-  display: flex;
-  gap: 10px; /* Space between buttons */
-  z-index: 10; /* Ensure buttons are above the map */
-}
-
-.right-buttons .button {
-  font-family: 'Roboto', sans-serif;
-  background-color: var(--amber);
-  color: #000; /* Black text */
-  font-size: var(--font-size-m);
-  font-weight: 600;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add some shadow */
-}
-
-.right-buttons .button:hover {
-  transform: scale(1.01); /* Slight enlargement on hover */
-  transition: transform 0.2s ease; /* Smooth transition effect */
-}  
 
 #map {
   flex-grow: 1; /* Allow map to expand within its container */
