@@ -113,6 +113,26 @@ map.on('click', 'mongoLayer', (e) => {
     });
 });
 
+map.on('mousemove', 'mongoLayer', (e) => {
+  if (e.features.length > 0) {
+    const feature = e.features[0];
+
+    // Get the id of the hovered feature
+    const featureId = feature.properties.id;
+
+    // Remove highlight from all links
+    document.querySelectorAll('.link.highlight').forEach((link) => {
+      link.classList.remove('highlight');
+    });
+
+    // Highlight the corresponding link
+    const link = document.getElementById(featureId);
+    if (link) {
+      link.classList.add('highlight');
+    }
+  }
+});
+
 // Log successful map load
 map.on('load', () => {
   console.log('Map loaded successfully!');
