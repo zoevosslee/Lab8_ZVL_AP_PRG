@@ -311,3 +311,11 @@ body {
     max-width: 100%; /* Allow image to fill smaller screens */
   }
 }
+
+* {
+  scrollbar-width: none; /* For Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
