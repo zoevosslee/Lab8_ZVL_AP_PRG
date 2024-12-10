@@ -113,7 +113,7 @@ body::-webkit-scrollbar {
 .we-are-always-lookin {
   font-family: var(--font-family-roboto);
   font-size: var(--font-size-m);
-  line-height: 1.8;
+  line-height: 1.5;
   text-align: justify;
   margin: 20px 0;
 }
@@ -127,7 +127,7 @@ body::-webkit-scrollbar {
   margin-bottom: 10px;
   font-family: var(--font-family-roboto);
   font-size: var(--font-size-m);
-  line-height: 1.8;
+  line-height: 1.5;
   text-align: justify;
 }
 
@@ -198,6 +198,15 @@ body::-webkit-scrollbar {
 
 .events-individual {
   scrollbar-width: none;
+}
+
+.contact .email-link {
+  color: white; /* Change text color to white */
+  text-decoration: none; /* Optional: Remove underline */
+}
+
+.contact .email-link:hover {
+  text-decoration: underline; /* Optional: Add underline on hover */
 }
 
 /* Responsive Design */
