@@ -140,5 +140,32 @@
   });
 
   </script>
+
+<script>
+  // Add hover interaction on sidebar links
+  document.querySelectorAll('.link').forEach((link) => {
+    link.addEventListener('mouseenter', () => {
+      const featureId = link.id.replace('link-', ''); // Remove 'link-' prefix to get the correct feature ID
+
+      // Set hover state for the corresponding map point
+      map.setFeatureState(
+        { source: 'mongoLayer', id: featureId },
+        { hover: true }
+      );
+    });
+
+    link.addEventListener('mouseleave', () => {
+      const featureId = link.id.replace('link-', ''); // Remove 'link-' prefix to get the correct feature ID
+
+      // Reset hover state for the corresponding map point
+      map.setFeatureState(
+        { source: 'mongoLayer', id: featureId },
+        { hover: false }
+      );
+    });
+  });
+</script>
+
+
 </body>
 </html>

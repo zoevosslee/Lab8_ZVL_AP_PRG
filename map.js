@@ -57,13 +57,18 @@ map.on('load', () => {
           type: 'circle',
           source: 'mongoLayer',
           paint: {
-            'circle-radius': 12,
-            'circle-color': '#ffd500', // Fill color
+            'circle-radius': [
+              'case',
+              ['boolean', ['feature-state', 'hover'], false],
+              16, // Enlarged size 
+              16     // Default size
+            ],
+            'circle-color': 'rgba(255, 191, 0, 0.8)', // Yellow color with 70% opacity
             'circle-stroke-color': '#000000', // Outline color
-            'circle-stroke-width': 0.5, // Outline width
+            'circle-stroke-width': 2, // Outline width
           },
         });
-
+        
         // Add popup interaction
         const popup = new mapboxgl.Popup({
           closeButton: false,
