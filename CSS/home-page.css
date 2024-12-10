@@ -28,7 +28,7 @@ body::-webkit-scrollbar {
 }
 /* Left Column */
 .left-column {
-  width: 40%;
+  width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -195,7 +195,7 @@ body::-webkit-scrollbar {
 
 /* Right Column */
 .right-column {
-  width: 60%;
+  width: 65%;
   position: relative;
   overflow: hidden;
 }
@@ -205,3 +205,5 @@ body::-webkit-scrollbar {
   height: 100%;
   object-fit: cover;
 }
+
+
