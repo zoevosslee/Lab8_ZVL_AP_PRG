@@ -192,3 +192,26 @@ body::-webkit-scrollbar {
     max-width: 100%;
   }
 }
+
+.logo-link {
+  cursor: pointer; /* Make it clear the text is clickable */
+  text-decoration: none; /* Remove any underline */
+  display: inline-block; /* Ensures the scaling works properly */
+}
+
+.logo-link h1 {
+  margin: 0; /* Remove any unwanted margins */
+  color: var(--amber); /* Keep the color consistent */
+  text-decoration: none; /* Ensure no underline */
+  -webkit-text-stroke: 0; /* No stroke initially */
+  -webkit-text-fill-color: var(--amber); /* Fill text with amber initially */
+  transition: transform 0.2s ease-in-out; /* Smooth scaling transition */
+}
+
+.logo-link:hover h1 {
+  transform: scale(1.01); /* Scale the text slightly */
+  color: var(--amber); /* Keep the color consistent on hover */
+  -webkit-text-fill-color: var(--amber); /* Maintain the amber color */
+  text-decoration: none; /* Ensure no underline on hover */
+}
+

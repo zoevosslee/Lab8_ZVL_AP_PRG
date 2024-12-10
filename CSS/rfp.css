@@ -31,7 +31,7 @@ body::-webkit-scrollbar {
   color: var(--amber);
   margin-bottom: 30px;
   position: relative;
-  z-index: 1;
+  z-index: 1000;
 }
 
 /* Footsteps Vector */
@@ -55,24 +55,29 @@ body::-webkit-scrollbar {
   align-items: center;
 }
 
-.nav-buttons .button {
-  font-family: var(--font-family-roboto);
+.title-container .button {
+  font-family: 'Roboto', sans-serif;
   background-color: var(--amber);
-  color: var(--black);
-  font-size: var(--font-size-m);
+  color: #000;
+  font-size: var(--font-size-m); /* Adjust to smaller size if needed */
   font-weight: 600;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 20px; /* Adjust padding for better fit */
   border-radius: 5px;
   cursor: pointer;
-  transition: transform 0.2s ease, background-color 0.2s ease; /* Smooth transitions */
-  text-decoration: none;
-  z-index: 1000;
+  text-decoration: none; /* Remove underline */
 }
 
-.nav-buttons .button:hover {
-  transform: scale(1.01); /* Enlarges slightly on hover */
+.title-container .button span {
+  pointer-events: none; /* Ensure the entire button is clickable */
 }
+
+.title-container .button:hover {
+  transform: scale(1.02); /* Slight hover effect */
+  transition: transform 0.2s ease; /* Smooth transition */
+
+}
+
 /* Header Image Styling */
 .rectangle-161 {
   width: 100%; /* Ensures the image spans the full width of the container */
@@ -93,6 +98,20 @@ body::-webkit-scrollbar {
   line-height: 1.8;
   background-color: #000;
 }
+
+.icon-text-container {
+  display: flex; /* Align items horizontally */
+  align-items: center; /* Vertically center the icon and text */
+  gap: 10px; /* Space between the icon and text */
+}
+
+.icon {
+  width: auto; /* Adjust icon width */
+  height: 60px; /* Maintain aspect ratio */
+  display: block; /* Ensure it behaves like an image block */
+  margin-right: 10px;
+}
+
 
 /* XL Section Heading */
 .section-heading-xl {
@@ -194,6 +213,44 @@ body::-webkit-scrollbar {
   transition: transform 0.2s ease;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-1,
+  .partners-section,
+  .contact {
+    max-width: 95%;
+    padding: 10px;
+  }
+
+  .image-container img {
+    max-width: calc(50% - 20px);
+  }
+
+  .paths-to-power-is-a {
+    font-size: var(--font-size-xs);
+  }
+
+  .about-paths-to-power,
+  .partners-and-current,
+  .place {
+    font-size: var(--font-size-l);
+  }
+
+  .learn-more {
+    font-size: var(--font-size-xs);
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .nav-buttons {
+    top: 10px;
+    right: 10px;
+    flex-wrap: wrap;
+  }
+}
+
 /* Responsive Design Adjustments */
 @media (max-width: 768px) {
   .section-heading {
@@ -210,3 +267,30 @@ body::-webkit-scrollbar {
   .evaluation-list li {
     font-size: var(--font-size-s); /* Smaller font for lists on smaller screens */
   }
+
+
+  .logo-link {
+    cursor: pointer; /* Make it clear the text is clickable */
+    text-decoration: none; /* Remove any underline */
+    display: inline-block; /* Ensures the scaling works properly */
+  }
+  
+  .logo-link h1 {
+    margin: 0; /* Remove any unwanted margins */
+    color: var(--amber); /* Keep the color consistent */
+    text-decoration: none; /* Ensure no underline */
+    -webkit-text-stroke: 0; /* No stroke initially */
+    -webkit-text-fill-color: var(--amber); /* Fill text with amber initially */
+    transition: transform 0.2s ease-in-out; /* Smooth scaling transition */
+  }
+  
+  .logo-link:hover h1 {
+    transform: scale(1.01); /* Scale the text slightly */
+    color: var(--amber); /* Keep the color consistent on hover */
+    -webkit-text-fill-color: var(--amber); /* Maintain the amber color */
+    text-decoration: none; /* Ensure no underline on hover */
+  }
+  
+  
+  
+  

@@ -5,10 +5,13 @@ body {
   background-color: var(--black);
   font-family: var(--font-family-roboto);
   color: var(--white);
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-  -ms-overflow-style: none; /* Hide scrollbar for IE */
-  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  overflow: hidden; /* Prevent scrolling */
+  display: flex; /* Use flexbox to center elements */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: space-between; /* Distribute space evenly */
+  height: 100vh; /* Full viewport height */
 }
+
 
 body::-webkit-scrollbar {
   display: none; /* Hide scrollbar for Webkit browsers */
@@ -78,73 +81,36 @@ body::-webkit-scrollbar {
 
 }
 
-/* Header Image Styling */
-.rectangle-161 {
-  width: 100%; /* Ensures the image spans the full width of the container */
-  height: auto; /* Maintains aspect ratio */
-  object-fit: cover; /* Ensures the image fills the container */
-  display: block; /* Removes inline spacing below the image */
-  margin: 0; /* Removes default margin */
-  padding: 0; /* Removes default padding */
-}
-
 /* About Section */
-.about-1,
-.partners-section,
-.contact {
-  max-width: 90%;
-  margin: 50px auto;
-  padding: 20px;
-  display: block;
+.about-1 {
+  display: flex; /* Flexbox for vertical and horizontal centering */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center-align horizontally */
+  justify-content: center; /* Center-align vertically */
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Center-align text */
+  color: #fff; /* White text */
+  line-height: 1.8; /* Improve readability */
+  margin: 0; /* Remove default margin */
 }
 
-.about-paths-to-power,
-.partners-and-current,
-.place {
-  font-family: var(--font-family-montserrat);
-  font-size: var(--font-size-xl);
-  font-weight: 900;
-  color: var(--amber);
-  margin-bottom: 20px;
-  text-align: left;
+/* "Thank You" Styling */
+.thanks {
+  font-family: 'Montserrat', sans-serif; /* Bold and prominent font */
+  font-size: 48px; /* Larger than before */
+  font-weight: 900; /* Extra-bold */
+  color: var(--amber); /* Amber color for emphasis */
+  margin-bottom: 20px; /* Space below the text */
 }
 
-.paths-to-power-is-a,
-.we-are-always-lookin {
-  font-family: var(--font-family-roboto);
-  font-size: var(--font-size-m);
-  line-height: 1.5;
-  text-align: justify;
-  margin: 20px 0;
-}
-
-.about-1 ul {
-  padding-left: 20px;
-  list-style-type: disc;
-}
-
-.about-1 ul li {
-  margin-bottom: 10px;
-  font-family: var(--font-family-roboto);
-  font-size: var(--font-size-m);
-  line-height: 1.5;
-  text-align: justify;
-}
-
-/* Partners Section */
-.image-container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-
-.image-container img {
-  height: 150px;
-  object-fit: contain;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+/* "An Archivist" Styling */
+.an-archivist {
+  font-family: 'Roboto', sans-serif; /* Regular body font */
+  font-size: 24px; /* Increased size for better readability */
+  font-weight: 400; /* Normal weight */
+  color: #fff; /* White text for readability */
+  margin-top: 0; /* No margin above */
+  line-height: 1.8; /* Improve readability */
 }
 
 /* Footer Buttons */
