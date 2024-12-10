@@ -42,33 +42,6 @@ body {
   pointer-events: none;
 }
 
-/* Buttons in Top Right */
-.title-container .nav-buttons {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
-  gap: 15px;
-}
-
-.title-container .button {
-  font-family: var(--font-family-roboto);
-  background-color: var(--amber);
-  color: var(--black);
-  font-size: var(--font-size-m);
-  font-weight: 600;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  z-index: 1000;
-}
-
-.title-container .button:hover {
-  transform: scale(1.01); /* Slight enlargement on hover */
-  transition: transform 0.2s ease; /* Smooth transition effect */
-}
 
 /* Main Layout */
 .main-layout {
@@ -103,6 +76,7 @@ body {
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
+
 .button {
   margin-top: 15px;
   background-color: var(--amber, #FFC107); /* Same amber color */
@@ -135,32 +109,6 @@ body {
   position: relative; /* Required for absolute positioning of buttons */
 }
 
-.right-buttons {
-  position: absolute; /* Position relative to .map-container */
-  bottom: 20px; /* Distance from the bottom */
-  right: 20px; /* Distance from the right edge */
-  display: flex;
-  gap: 10px; /* Space between buttons */
-  z-index: 10; /* Ensure buttons are above the map */
-}
-
-.right-buttons .button {
-  font-family: 'Roboto', sans-serif;
-  background-color: var(--amber);
-  color: #000; /* Black text */
-  font-size: var(--font-size-m);
-  font-weight: 600;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add some shadow */
-}
-
-.right-buttons .button:hover {
-  transform: scale(1.01); /* Slight enlargement on hover */
-  transition: transform 0.2s ease; /* Smooth transition effect */
-}  
 
 #map {
   flex-grow: 1; /* Allow map to expand within its container */
@@ -246,24 +194,6 @@ textarea {
   height: 150px; /* Larger height for better usability */
 }
 
-/* Submit Button */
-button[type="submit"] {
-  margin-top: 20px; /* Add space above */
-  padding: 10px 20px;
-  font: var(--font-family-roboto);
-  font-size: var(--font-size-m); /* Use medium font size */
-  font-weight: bold;
-  background-color: var(--amber, #FFC107);
-  color: #000;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-button[type="submit"]:hover {
-  background-color: #e0b800; /* Darker yellow on hover */
-}
 /* Ensure Scroll Completes */
 .scroll {
   display: flex;
@@ -320,24 +250,6 @@ textarea {
   height: 100px; /* Set a reasonable height */
 }
 
-/* Submit Button */
-button[type="submit"] {
-  margin-top: 20px; /* Add space above */
-  padding: 10px 20px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  background-color: var(--amber, #FFC107);
-  color: #000;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-button[type="submit"]:hover {
-  background-color: #e0b800;
-}
-
 /* Ensure Scroll Completes */
 .scroll {
   display: flex;
@@ -347,8 +259,8 @@ button[type="submit"]:hover {
   min-height: 100%; /* Ensure the container spans at least the height of its parent */
 }
 
-/* Nav Buttons */
-.nav-buttons {
+/* Buttons in Top Right FINAL */
+.title-container .nav-buttons {
   display: flex;
   gap: 15px;
   flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
@@ -356,27 +268,25 @@ button[type="submit"]:hover {
   align-items: center;
 }
 
-.nav-buttons .button {
-  font-family: 'Roboto', sans-serif;
-  background-color: var(--amber, #FFC107); /* Bright yellow background */
-  color: #000; /* Black text */
-  font-size: var(--font-size-m); 
+.title-container .button {
+  font-family: var(--font-family-roboto);
+  background-color: var(--amber);
+  color: var(--black);
+  font-size: var(--font-size-m);
   font-weight: 600;
   border: none;
-  padding: 15px 25px; /* Larger padding for a bigger button */
-  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px;
+  border-radius: 5px;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add button shadow */
-  transition: transform 0.2s ease, background-color 0.3s ease;
+  text-transform: none;
   text-decoration: none;
-
+  z-index: 1000;
 }
 
-.nav-buttons .button:hover {
-  transform: scale(1.02); /* Slightly larger on hover */
-  background-color: #e0b800; /* Darker yellow on hover */
+.title-container .button:hover {
+  transform: scale(1.01); /* Slight enlargement on hover */
+  transition: transform 0.2s ease; /* Smooth transition effect */
 }
-
 /* Limit popup width */
 .mapboxgl-popup {
   max-width: 400px; /* Adjust as needed */
