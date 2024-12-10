@@ -116,7 +116,7 @@ body::-webkit-scrollbar {
 
 .mapping-title {
   font-family: var(--font-family-roboto), sans-serif;
-  font-size: 36px;
+  font-size: var(--font-size-l);
   font-weight: 600;
   color: var(--amber);
   margin-bottom: 30px;
@@ -125,10 +125,18 @@ body::-webkit-scrollbar {
 
 .description-text {
   font-family: var(--font-family-roboto), sans-serif;
-  font-size: 24px;
+  font-size: var(--font-size-m);
   line-height: 1.5;
   margin-bottom: 20px;
 }
+
+.engagement-list {
+  font-family: var(--font-family-roboto), sans-serif;
+  font-size: var(--font-size-m);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
 
 .learn-more {
   display: inline-block; /* Ensures it behaves like a button */
@@ -136,7 +144,7 @@ body::-webkit-scrollbar {
   color: #000;
   font-weight: 600;
   font-family: var(--font-family-roboto), sans-serif;
-  font-size: 1.2rem;
+  font-size: var(--font-size-m);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -145,10 +153,6 @@ body::-webkit-scrollbar {
   text-decoration: none;
   transition: transform 0.2s ease; /* Smooth transition effect */
   z-index: 1000;
-}
-
-.learn-more span {
-  pointer-events: none; /* Ensures only the a tag is clickable, not the text */
 }
 
 .learn-more:hover {
@@ -173,9 +177,10 @@ body::-webkit-scrollbar {
   color: var(--amber);
   font-family: var(--font-family-roboto), sans-serif;
   font-weight: 900;
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-l);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.2s ease;
+  text-decoration: none;
 }
 
 .button-container img {
